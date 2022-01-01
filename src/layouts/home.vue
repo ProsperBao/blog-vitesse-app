@@ -5,8 +5,6 @@
     <div class="mt-5 mx-auto text-center opacity-25 text-sm">
       [Home Layout]
     </div>
-    <div class="container mx-auto mt-1">
-      <Status />
-    </div>
+    <Status />
   </main>
 </template>
