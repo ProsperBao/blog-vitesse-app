@@ -3,11 +3,17 @@ button:
   back: 戻る
   go: 進む
   home: ホーム
+  list: テストリスト
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
 intro:
+  aka: としても知られている
   desc: 固執された Vite スターターテンプレート
   dynamic-route: 動的ルートのデモ
   hi: こんにちは、{name}!
   whats-your-name: 君の名は。
+list:
+  title: 今日の歴史
 not-found: 見つかりませんでした
+status:
+  loading: 読み込み中
