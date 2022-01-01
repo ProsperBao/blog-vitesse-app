@@ -3,12 +3,17 @@ button:
   back: Back
   go: GO
   home: Home
+  list: Test list
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
+  aka: Also known as
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
-  aka: Also known as
   whats-your-name: What's your name?
+list:
+  title: today in History
 not-found: Not found
+status:
+  loading: Loading
