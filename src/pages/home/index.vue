@@ -21,9 +21,11 @@ fetch('https://api.oick.cn/lishi/api.php')
     <div v-show="loading">
       {{ t('status.loading') }}
     </div>
-    <div v-for="item in list" :key="item.date">
-      {{ item.title }}
-    </div>
+    <ol>
+      <li v-for="item in list" :key="item.date">
+        {{ item.title }}
+      </li>
+    </ol>
   </div>
 </template>
 
