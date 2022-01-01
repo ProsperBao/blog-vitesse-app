@@ -1,3 +1,6 @@
+## status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ebd6adf0-aa73-43be-8890-e89a13501d65/deploy-status)](https://app.netlify.com/sites/serene-tereshkova-18f57a/deploys)
+
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness

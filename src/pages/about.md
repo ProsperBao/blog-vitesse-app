@@ -8,15 +8,5 @@ title: About
   <h3>About</h3>
 </div>
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **WindiCSS** for UI.
-
-```js
-// syntax highlighting example
-function vitesse() {
-  const foo = 'bar'
-  console.log(foo);
-  // test netfily
-}
-```
-
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
+## Current site status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ebd6adf0-aa73-43be-8890-e89a13501d65/deploy-status)](https://app.netlify.com/sites/serene-tereshkova-18f57a/deploys)
