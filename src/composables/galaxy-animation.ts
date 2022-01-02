@@ -60,7 +60,9 @@ function isInEllipse(mouseX: number, mouseY: number, ellipseX: number, ellipseY:
 }
 type vec2 = [number, number]
 
-const IS_HIGH_RES = window.matchMedia(`
+let IS_HIGH_RES: any
+if (typeof window !== 'undefined') {
+  IS_HIGH_RES = window.matchMedia(`
       (-webkit-min-device-pixel-ratio: 2),
       (min--moz-device-pixel-ratio: 2),
       (-moz-min-device-pixel-ratio: 2),
@@ -69,10 +71,15 @@ const IS_HIGH_RES = window.matchMedia(`
       (min-resolution: 192dpi),
       (min-resolution: 2dppx)
     `)
+}
 
-const IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+let IS_MOBILE: any
+if (typeof navigator !== 'undefined')
+  IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
-const IS_HIGH_RES_AND_MOBILE = (IS_HIGH_RES.matches && IS_MOBILE)
+let IS_HIGH_RES_AND_MOBILE: any
+if (typeof window !== 'undefined' && typeof navigator !== 'undefined')
+  IS_HIGH_RES_AND_MOBILE = (IS_HIGH_RES.matches && IS_MOBILE)
 
 class Star {
   FORWARD_SPEED: number
