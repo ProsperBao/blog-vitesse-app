@@ -1,9 +1,11 @@
 button:
   about: About
   back: Back
+  close-side: Close sidebar
   go: GO
   home: Home
   list: Test list
+  open-side: Open sidebar
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
@@ -11,6 +13,7 @@ intro:
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
+  welcome: Welcome
   whats-your-name: What's your name?
 list:
   title: today in History

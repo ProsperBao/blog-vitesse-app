@@ -1,9 +1,11 @@
 button:
   about: これは？
   back: 戻る
+  close-side: サイドバーを閉じる
   go: 進む
   home: ホーム
   list: テストリスト
+  open-side: サイドバーを開く
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
 intro:
@@ -11,6 +13,7 @@ intro:
   desc: 固執された Vite スターターテンプレート
   dynamic-route: 動的ルートのデモ
   hi: こんにちは、{name}!
+  welcome: ようこそ
   whats-your-name: 君の名は。
 list:
   title: 今日の歴史

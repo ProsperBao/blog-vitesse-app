@@ -1,9 +1,11 @@
 button:
   about: 关于
   back: 返回
+  close-side: 关闭侧边栏
   go: 确定
   home: 首页
   list: 测试列表
+  open-side: 打开侧边栏
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
 intro:
@@ -11,6 +13,7 @@ intro:
   desc: 固执己见的 Vite 项目模板
   dynamic-route: 动态路由演示
   hi: 你好，{name}
+  welcome: 欢迎光临
   whats-your-name: 输入你的名字
 list:
   title: 历史上的今天

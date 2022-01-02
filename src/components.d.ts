@@ -12,7 +12,9 @@ declare module 'vue' {
     CarbonSun: typeof import('~icons/carbon/sun')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    GalaxyAnimation: typeof import('./components/background/GalaxyAnimation.vue')['default']
     README: typeof import('./components/README.md')['default']
+    Sider: typeof import('./components/layouts/Sider.vue')['default']
     Status: typeof import('./components/Status.vue')['default']
   }
 }
