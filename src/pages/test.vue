@@ -8,19 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import { useTestListStore } from '~/stores/testList'
+import { useStore } from '~/stores/test'
 
-const store = useTestListStore()
-const list = computed(() => store.list)
+const { list } = useStore()
 
-onServerPrefetch(async() => {
-  await store.getRequestData()
-})
-
-onMounted(async() => {
-  if (!list.value.length)
-    await store.getRequestData()
-})
 </script>
 <route lang="yaml">
 meta:
