@@ -17,6 +17,9 @@ intro:
   whats-your-name: 输入你的名字
 list:
   title: 历史上的今天
+nav:
+  article: 文章
+  home: 首页
 not-found: 未找到页面
 status:
   loading: 加载中

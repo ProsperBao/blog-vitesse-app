@@ -3,12 +3,12 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="relative h-full flex justify-center items-center">
-    <GalaxyAnimation class="absolute" />
+  <div class="h-full flex justify-center items-center">
     <h1 class="text-5xl text-shadow-sm opacity-50">
       {{ t('intro.welcome') }}
     </h1>
   </div>
+  <Galaxy />
 </template>
 
 <route lang="yaml">

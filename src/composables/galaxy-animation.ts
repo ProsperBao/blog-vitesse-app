@@ -219,7 +219,7 @@ class Star {
     }
   }
 
-  draw(context: CanvasRenderingContext2D, container: vec2, screen: vec2, mouseX: number, mouseY: number) {
+  draw(context: CanvasRenderingContext2D, container: vec2, screen: vec2) {
     const [width, height] = screen
     const [depth] = container
 
@@ -370,6 +370,8 @@ export class StarField {
     this.isResizing = false
     this.wasResizing = false
     this.containerDepth = depth
+    this.screen = [canvas.width, canvas.height]
+    this.container = [canvas.width, canvas.height]
     this.setCanvasSize()
 
     this.howManyStars = howManyStars
@@ -385,8 +387,6 @@ export class StarField {
     this.mouseY = (canvas.offsetHeight * 0.25) - 66
 
     this.UIFadeDelay = UIFadeDelay
-    this.screen = [canvas.offsetWidth, canvas.offsetHeight]
-    this.container = [canvas.offsetWidth, canvas.offsetHeight]
 
     this.currentFrame = 0
     // this is where the pointer data affects the animation via xSpeed and zSpeed
@@ -605,3 +605,5 @@ export class StarField {
     }, 200)
   }
 }
+
+// TODO: 离开/进入窗口

@@ -10,13 +10,27 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <section class="w-45 h-screen p-1 rounded-r flex flex-col justify-between text-center shadow duration-150">
+  <section class="w-30 h-screen p-1 flex flex-col justify-between text-center shadow duration-150 bg-light-50 dark:bg-dark-500">
     <div>
       <h1>MacBear</h1>
       <p class="text-xs m-2 text-gray-500">
         {{ t('intro.welcome') }}
       </p>
     </div>
+    <nav class="nav flex flex-col">
+      <router-link to="/" class="opacity-50 hover:opacity-75">
+        <carbon:home class="md align-text-top" />
+        <span class="lt-md ml-2">{{ t('nav.home') }}</span>
+      </router-link>
+      <router-link to="/posts" class="opacity-50 hover:opacity-75">
+        <ri-article-line class="md align-text-top" />
+        <span class="lt-md ml-2">{{ t('nav.article') }}</span>
+      </router-link>
+      <router-link to="/test" class="opacity-50 hover:opacity-75">
+        <ri-article-line class="md align-text-top" />
+        <span class="lt-md ml-2">{{ t('nav.article') }}</span>
+      </router-link>
+    </nav>
     <div>
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
         <carbon-moon v-if="isDark" />
@@ -31,3 +45,9 @@ const toggleLocales = () => {
     </div>
   </section>
 </template>
+
+<style scoped>
+.router-link-active {
+  opacity: 1;
+}
+</style>

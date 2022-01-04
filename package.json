@@ -25,6 +25,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.14.0",
     "@iconify-json/carbon": "^1.0.12",
+    "@iconify-json/ri": "^1.0.2",
     "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
@@ -32,6 +33,7 @@
     "@vue/compiler-sfc": "^3.2.26",
     "@vue/server-renderer": "^3.2.26",
     "@vue/test-utils": "^2.0.0-rc.18",
+    "axios": "^0.24.0",
     "critters": "^0.0.15",
     "cross-env": "^7.0.3",
     "cypress": "^9.1.1",

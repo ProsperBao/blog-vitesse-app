@@ -17,6 +17,9 @@ intro:
   whats-your-name: What's your name?
 list:
   title: today in History
+nav:
+  article: article
+  home: home
 not-found: Not found
 status:
   loading: Loading
