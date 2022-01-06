@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 import axios from 'axios'
 
 export const useStore = defineStore('testList', {
@@ -6,10 +6,12 @@ export const useStore = defineStore('testList', {
     list: [],
   }),
   actions: {
-    dispatch() {
-      axios.get('https://api.oick.cn/lishi/api.php').then((res) => {
-        this.list = res.data.result
-      })
+    async dispatch() {
+      const res = await axios.get('https://api.oick.cn/lishi/api.php')
+      this.list = (res).data.result
     },
   },
 })
+
+if (import.meta.hot)
+  import.meta.hot.accept(acceptHMRUpdate(useStore, import.meta.hot))
