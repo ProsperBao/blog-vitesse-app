@@ -8,9 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from '~/stores/test'
+import { useListStore } from '~/stores/test'
 
-const list = useStore()
+const list = useListStore()
 
 // onServerPrefetch(async() => {
 //   await list.dispatch()
