@@ -12,9 +12,9 @@ import { useListStore } from '~/stores/test'
 
 const list = useListStore()
 
-// onServerPrefetch(async() => {
-//   await list.dispatch()
-// })
+onServerPrefetch(async() => {
+  await list.dispatch()
+})
 // // if (list.list.length === 0) {
 // //   (async() => {
 // //     await list.dispatch()
