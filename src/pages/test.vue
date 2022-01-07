@@ -1,9 +1,11 @@
 <template>
   <div>
     test server render
-    <ul v-for="item in list.list" :key="item.date">
-      <li>{{ item.title }}</li>
-    </ul>
+    <suspense>
+      <ul v-for="item in list.list" :key="item.date">
+        <li>{{ item.title }}</li>
+      </ul>
+    </suspense>
   </div>
 </template>
 
