@@ -1,23 +1,17 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
 import axios from 'axios'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 
-export const useListStore = defineStore('testList',
-  () => {
-    const saveList = ref<{date: string;title: string}[]>()
-
-    const list = computed(() => saveList.value)
-
-    async function dispatch() {
+export const useListStore = defineStore('testList', {
+  state: (): {list: {date: string;title: string}[]} => ({
+    list: [],
+  }),
+  actions: {
+    async dispatch() {
       const res = await axios.get('https://api.oick.cn/lishi/api.php')
-      saveList.value = res.data.result
-    }
-
-    return {
-      list,
-      dispatch,
-    }
+      this.list = (res).data.result
+    },
   },
-)
+})
 
 if (import.meta.hot)
   import.meta.hot.accept(acceptHMRUpdate(useListStore, import.meta.hot))

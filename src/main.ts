@@ -1,4 +1,5 @@
 // register vue composition api globally
+import devalue from '@nuxt/devalue'
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
@@ -23,5 +24,10 @@ export const createApp = ViteSSG(
   (ctx) => {
     // install all modules under `modules/`
     Object.values(import.meta.globEager('./modules/*.ts')).map(i => i.install?.(ctx))
+  },
+  {
+    transformState(state) {
+      return import.meta.env.SSR ? devalue(state) : state
+    },
   },
 )
