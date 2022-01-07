@@ -15,8 +15,6 @@ const list = useListStore()
 onServerPrefetch(async() => {
   await list.dispatch()
 })
-
-import.meta.env.DEV && list.dispatch()
 </script>
 
 <route lang="yaml">
