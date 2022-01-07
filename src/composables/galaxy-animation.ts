@@ -331,9 +331,9 @@ const getPointerInput = (callback: any, element: any = document, delay = 600) =>
   }
 
   // set up the handlers ^.^
-  element.addEventListener('touchstart', e => handlePointer(e), true)
-  element.addEventListener('touchmove', e => handlePointer(e), true)
-  element.addEventListener('mousemove', e => handlePointer(e), true)
+  element.addEventListener('touchstart', (e: TouchEvent | MouseEvent) => handlePointer(e), true)
+  element.addEventListener('touchmove', (e: TouchEvent | MouseEvent) => handlePointer(e), true)
+  element.addEventListener('mousemove', (e: TouchEvent | MouseEvent) => handlePointer(e), true)
 
   return false
 }

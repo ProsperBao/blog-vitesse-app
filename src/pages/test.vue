@@ -8,13 +8,16 @@
 </template>
 
 <script setup lang="ts">
+import { useDispatch } from '~/composables';
 import { useListStore } from '~/stores/test'
 
 const list = useListStore()
 
-onServerPrefetch(async() => {
+useDispatch(async () => {
   await list.dispatch()
 })
+
+
 </script>
 <route lang="yaml">
 meta:
