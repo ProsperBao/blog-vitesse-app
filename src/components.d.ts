@@ -13,6 +13,7 @@ declare module 'vue' {
     Galaxy: typeof import('./components/Galaxy.vue')['default']
     RiArticleLine: typeof import('~icons/ri/article-line')['default']
     Sider: typeof import('./components/layouts/Sider.vue')['default']
+    TodayList: typeof import('./components/TodayList.vue')['default']
   }
 }
 
