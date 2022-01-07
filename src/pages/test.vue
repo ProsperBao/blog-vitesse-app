@@ -12,7 +12,7 @@ import { useListStore } from '~/stores/test'
 
 const list = useListStore()
 
-const dispatch = () => list.dispatch()
+const dispatch = list.dispatch
 
 import.meta.env.DEV ? onServerPrefetch(dispatch) : dispatch()
 
