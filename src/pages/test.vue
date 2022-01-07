@@ -14,7 +14,7 @@ const list = useListStore()
 
 const dispatch = list.dispatch
 
-import.meta.env.DEV ? onServerPrefetch(dispatch) : dispatch()
+import.meta.env.DEV ? dispatch() : onServerPrefetch(dispatch)
 
 </script>
 
