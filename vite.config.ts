@@ -21,7 +21,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
-      '@nuxt/devalue': '@nuxt/devalue/dist/devalue.js',
     },
   },
   plugins: [
