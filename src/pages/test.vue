@@ -12,10 +12,11 @@ import { useListStore } from '~/stores/test'
 
 const list = useListStore()
 
-const dispatch = async() => await list.dispatch()
+onServerPrefetch(async() => {
+  await list.dispatch()
+})
 
-import.meta.env.DEV ? dispatch() : onServerPrefetch(dispatch)
-
+import.meta.env.DEV && list.dispatch()
 </script>
 
 <route lang="yaml">
