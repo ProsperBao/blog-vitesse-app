@@ -4,16 +4,20 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BackgroundGalaxy: typeof import('./components/BackgroundGalaxy.vue')['default']
+    'Carbon:book': typeof import('~icons/carbon/book')['default']
     'Carbon:home': typeof import('~icons/carbon/home')['default']
+    CarbonBook: typeof import('~icons/carbon/book')['default']
+    CarbonHome: typeof import('~icons/carbon/home')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
+    CarbonWarning: typeof import('~icons/carbon/warning')['default']
     Footer: typeof import('./components/Footer.vue')['default']
-    Galaxy: typeof import('./components/Galaxy.vue')['default']
     RiArticleLine: typeof import('~icons/ri/article-line')['default']
-    Sider: typeof import('./components/layouts/Sider.vue')['default']
     TodayList: typeof import('./components/TodayList.vue')['default']
+    TopControl: typeof import('./components/TopControl.vue')['default']
   }
 }
 

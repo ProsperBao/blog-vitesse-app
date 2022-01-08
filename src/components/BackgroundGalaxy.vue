@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none" style="z-index: -1">
+  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none opacity-30" style="z-index: -1">
     <canvas ref="el" class="w-full h-full" />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <main class="flex text-gray-700 dark:text-gray-200">
-    <Sider />
-    <section class="w-full">
+  <main class="text-gray-700 dark:text-gray-200">
+    <TopControl />
+    <section class="w-full mt-1">
       <router-view />
     </section>
   </main>

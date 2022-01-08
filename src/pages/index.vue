@@ -4,11 +4,11 @@ const { t } = useI18n()
 
 <template>
   <div class="h-full flex justify-center items-center">
-    <h1 class="text-5xl text-shadow-sm opacity-50">
+    <h1 class="mt-50 text-5xl text-shadow-sm opacity-50">
       {{ t('intro.welcome') }}
     </h1>
   </div>
-  <Galaxy />
+  <BackgroundGalaxy />
 </template>
 
 <route lang="yaml">

@@ -425,6 +425,9 @@ export class StarField {
     // helps when you navigate away from the page for a while, prevents stars grouping up into one big wall
     // #fuckthewall lol
     window.addEventListener('beforeunload', () => this.rePopulateStarField())
+
+    window.addEventListener('focus', () => this.play(), false)
+    window.addEventListener('blur', () => this.pause(), false)
     // not in use yet
     // document.addEventListener("deviceorientation", (e) => this.handleOrientation(e), true);
   }
@@ -605,5 +608,3 @@ export class StarField {
     }, 200)
   }
 }
-
-// TODO: 离开/进入窗口
