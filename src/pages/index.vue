@@ -8,7 +8,6 @@ const { t } = useI18n()
       {{ t('intro.welcome') }}
     </h1>
   </div>
-  <BackgroundGalaxy />
 </template>
 
 <route lang="yaml">

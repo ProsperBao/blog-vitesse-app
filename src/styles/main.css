@@ -8,11 +8,14 @@ body,
   padding: 0;
 }
 html {
-  @apply bg-light-500 text-dark-50;
+  background-color: #fff;
+  color: #000;
+  transition: background-color,color 0.2s ease-out;
 }
 
 html.dark {
-  @apply bg-dark-50 text-light-500;
+  background-color: #1c1c1e;
+  color: #fff;
 }
 
 #nprogress {
@@ -32,15 +35,9 @@ html.dark {
 }
 
 .btn {
-  @apply px-4 py-1 rounded inline-block
-    bg-sky-500 text-white cursor-pointer
-    hover:bg-sky-700
-    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+  @apply cursor-pointer outline-none;
 }
 
 .icon-btn {
-  @apply inline-block cursor-pointer select-none
-    opacity-75 transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-sky-500;
-  font-size: 0.9em;
+  @apply cursor-pointer outline-none;
 }
