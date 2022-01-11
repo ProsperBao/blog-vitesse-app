@@ -1,39 +1,12 @@
-<script setup lang="ts">
-import { isDark, toggleDark } from '~/composables'
-
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
-</script>
-
 <template>
-  <nav class="text-xl mt-6">
-    <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <carbon-campsite />
-    </router-link>
-    <router-link class="icon-btn mx-2" to="/home" :title="t('button.list')">
-      <carbon-campsite />
-    </router-link>
-
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
-      <carbon-moon v-if="isDark" />
-      <carbon-sun v-else />
-    </button>
-
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
-      <carbon-language />
-    </a>
-
-    <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <carbon-dicom-overlay />
-    </router-link>
-
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <carbon-logo-github />
-    </a>
-  </nav>
+  <section class="text-center">
+    <div class="record">
+      <a href="http://beian.miit.gov.cn/" target="_blank">闽ICP备19006658号-2</a>
+    </div>
+    <div class="flex space-x-2">
+      <span>© 2021 – 2022 </span>
+      <img src="https://gitee.com/baiheee/learn-typora-img/raw/master/202201111151226.gif" class="w-6 h-6" alt="icon">
+      <span>福宝</span>
+    </div>
+  </section>
 </template>
