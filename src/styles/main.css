@@ -23,7 +23,7 @@ html.dark {
 }
 
 #nprogress .bar {
-  @apply bg-teal-600 opacity-75;
+  @apply bg-l-green opacity-75;
 
   position: fixed;
   z-index: 1031;
@@ -35,9 +35,9 @@ html.dark {
 }
 
 .btn {
-  @apply cursor-pointer outline-none;
+  @apply cursor-pointer outline-none hover:text-l-blue dark:hover:text-d-blue;
 }
 
 .icon-btn {
-  @apply cursor-pointer outline-none;
+  @apply cursor-pointer outline-none hover:text-l-blue dark:hover:text-d-blue;
 }

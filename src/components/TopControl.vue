@@ -14,7 +14,7 @@ const toggleLocales = () => {
     <a href="/" class="icon-btn">
       <carbon-home />
     </a>
-    <a href="/blogs" class="icon-btn">
+    <a href="/posts" class="icon-btn">
       <carbon-book />
     </a>
     <a class="icon-btn" :title="t('button.toggle_dark')" @click="toggleDark()">

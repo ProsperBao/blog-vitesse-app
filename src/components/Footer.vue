@@ -1,7 +1,7 @@
 <template>
   <section class="text-center">
     <div class="record">
-      <a href="http://beian.miit.gov.cn/" target="_blank">闽ICP备19006658号-2</a>
+      <a class="hover:text-l-blue" href="http://beian.miit.gov.cn/" target="_blank">闽ICP备19006658号-2</a>
     </div>
     <div class="flex space-x-2">
       <span>© 2021 – 2022 </span>

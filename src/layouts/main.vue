@@ -6,7 +6,7 @@
       </h1>
       <TopControl />
     </header>
-    <section class="w-full mt-1">
+    <section class="px-7 py-10">
       <router-view />
     </section>
     <Footer class="fixed bottom-2 left-1/2 transform -translate-x-1/2"/>
