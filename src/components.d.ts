@@ -6,7 +6,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     BackgroundGalaxy: typeof import('./components/BackgroundGalaxy.vue')['default']
     CarbonBook: typeof import('~icons/carbon/book')['default']
-    CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
     CarbonHome: typeof import('~icons/carbon/home')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']

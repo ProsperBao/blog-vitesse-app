@@ -11,12 +11,12 @@ const toggleLocales = () => {
 
 <template>
   <nav class="flex justify-center space-x-2 text-2xl mt-5">
-    <a href="/" :title="t('button.home')" class="icon-btn">
+    <router-link to="/" :title="t('button.home')" class="icon-btn">
       <carbon-home />
-    </a>
-    <a href="/posts" :title="t('button.posts')" class="icon-btn">
+    </router-link>
+    <router-link to="/posts" :title="t('button.posts')" class="icon-btn">
       <carbon-book />
-    </a>
+    </router-link>
     <a class="icon-btn" :title="t('button.toggle_dark')" @click="toggleDark()">
       <carbon-moon v-if="isDark" />
       <carbon-sun v-else />

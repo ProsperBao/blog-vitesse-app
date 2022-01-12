@@ -39,7 +39,7 @@ const { t } = useI18n()
         </li>
       </ul>
     </p>
-    <h4>{{ t('me.about_front') }}</h4>
+    <h4>{{ t('me.about_future') }}</h4>
     <p>{{ t('me.article_about_future') }}</p>
   </div>
 </template>
