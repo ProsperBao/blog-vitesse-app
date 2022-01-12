@@ -1,22 +1,31 @@
 button:
   about: これは？
   back: 戻る
-  close-side: サイドバーを閉じる
   go: 進む
   home: ホーム
-  list: テストリスト
-  open-side: サイドバーを開く
+  posts: 記事
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
 intro:
-  aka: としても知られている
-  desc: 固執された Vite スターターテンプレート
-  dynamic-route: 動的ルートのデモ
-  hi: こんにちは、{name}!
-  welcome: ようこそ
-  whats-your-name: 君の名は。
-list:
-  title: 今日の歴史
+  welcome: ようこそ。
+me:
+  about: 私について
+  about_front: フロントエンドについて
+  about_future: 将来
+  article: バックエンドについて少し知っているフルタイムのフロントエンド開発者であるFubaoです。
+  article_about_electron: 私はこれを使用して、QQやメッセンジャーに似たインスタントメッセージングのデスクトップバージョンと、在庫監視に似たデスクトップバージョンを作成しました。
+  article_about_future: やりたいことが多すぎて、オープンソースをフルタイムでやりたいのですが、自分の強みでは許せないので、まずはこのサイトを維持する必要があります。
+  article_about_more: |-
+    チャートはもっとたくさんありますか？
+    私も忘れました。
+  article_about_nuxt: もともとこのサイトにはnuxtやnuxt3を使いたかったのですが、このサイトはデータのリクエストやレンダリングがあまり必要ないので諦めました。
+  article_about_react: |-
+    いくつかのガジェットを作成してから、モバイルプロジェクトの作成を検討しましたか？ 
+    React Nativeを使用していますか？
+  article_about_vue: 私が最もよく使用するフレームワークの1つであり、vueのデザインコンセプトも気に入っています。
+  article_front: >-
+    私はいくつかの小さな問題を解決するためにいくつかのガジェットを使用した可能性があり、それは大きなプロジェクトではありませんが、他の人も多くの関連文書を読んでいます。
+  name: フーバオ
 nav:
   article: 記事
   home: 表紙

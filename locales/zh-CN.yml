@@ -1,22 +1,26 @@
 button:
   about: 关于
   back: 返回
-  close-side: 关闭侧边栏
   go: 确定
   home: 首页
-  list: 测试列表
-  open-side: 打开侧边栏
+  posts: 文章
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
 intro:
-  aka: 也叫
-  desc: 固执己见的 Vite 项目模板
-  dynamic-route: 动态路由演示
-  hi: 你好，{name}
   welcome: 欢迎光临
-  whats-your-name: 输入你的名字
-list:
-  title: 历史上的今天
+me:
+  name: 福宝
+  about: 关于我
+  about_front: 关于前端
+  article: 我是福宝，一个专职前端开发人员，略懂一点后端。
+  article_front: 我可能用过一部分小玩意解决了一些小问题，也不算很大的项目，但其他也看了不少相关文档。
+  article_about_vue: 我用的最多的一个框架，我也很喜欢 vue 的设计理念。
+  article_about_nuxt: 原本这个站点我想用 nuxt 或者 nuxt3 的但是我还是放弃了，因为这个站点不需要太多的数据请求和渲染。
+  article_about_electron: 用它写过一个类似于 QQ 或者 messenger 的即使通讯桌面版，还写过一个类似于股票监控的桌面版。
+  article_about_react: 写过一些小玩意，之后考虑写一个移动端的项目？用 React Native?
+  article_about_more: 还有很多，图表？我也忘记了。
+  about_future: 未来
+  article_about_future: 想做的东西太多了，想全职做开源，但是实力不允许，先把这个站点维护好吧。
 nav:
   article: 文章
   home: 首页

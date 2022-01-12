@@ -12,7 +12,7 @@ const el = ref<HTMLCanvasElement | null>(null)
 
 onMounted(() => {
   if (el.value) {
-    starfield = new StarField(1000, el.value)
+    starfield = new StarField(Math.floor(window.innerWidth / 2), el.value)
     starfield.startRenderLoop()
   }
 })

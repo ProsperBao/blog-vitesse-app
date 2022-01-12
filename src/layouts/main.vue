@@ -6,10 +6,10 @@
       </h1>
       <TopControl />
     </header>
-    <section class="px-7 py-10">
+    <section class="min-h-80vh px-7 py-10">
       <router-view />
     </section>
-    <Footer class="fixed bottom-2 left-1/2 transform -translate-x-1/2"/>
+    <Footer />
   </main>
   <ClientOnly>
     <BackgroundGalaxy />

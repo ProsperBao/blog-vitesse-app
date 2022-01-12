@@ -1,22 +1,43 @@
 button:
   about: About
   back: Back
-  close-side: Close sidebar
   go: GO
   home: Home
-  list: Test list
-  open-side: Open sidebar
+  posts: article
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
-  aka: Also known as
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
   welcome: Welcome
-  whats-your-name: What's your name?
-list:
-  title: today in History
+me:
+  about: about me
+  about_front: About the front end
+  about_future: future
+  article: >-
+    I'm Fubao, a full-time front-end developer who knows a little about
+    back-end.
+  article_about_electron: >-
+    I have used it to write a desktop version of instant messaging similar to QQ
+    or messenger, and a desktop version similar to stock monitoring.
+  article_about_future: >-
+    There are too many things I want to do, and I want to do open source
+    full-time, but my strength does not allow it, so I need to maintain this
+    site first.
+  article_about_more: |-
+    There are many more, charts? 
+    I also forgot.
+  article_about_nuxt: >-
+    Originally, I wanted to use nuxt or nuxt3 for this site, but I gave up
+    because this site doesn't require much data request and rendering.
+  article_about_react: |-
+    Have written some gadgets, and then consider writing a mobile project? 
+    Using React Native?
+  article_about_vue: >-
+    One of the frameworks I use the most, and I also like the design concept of
+    vue.
+  article_front: >-
+    I may have used some gadgets to solve some small problems, and it is not a
+    big project, but others have also read a lot of related documents.
+  name: Fu Bao
 nav:
   article: article
   home: home

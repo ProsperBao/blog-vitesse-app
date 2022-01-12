@@ -11,10 +11,10 @@ const toggleLocales = () => {
 
 <template>
   <nav class="flex justify-center space-x-2 text-2xl mt-5">
-    <a href="/" class="icon-btn">
+    <a href="/" :title="t('button.home')" class="icon-btn">
       <carbon-home />
     </a>
-    <a href="/posts" class="icon-btn">
+    <a href="/posts" :title="t('button.posts')" class="icon-btn">
       <carbon-book />
     </a>
     <a class="icon-btn" :title="t('button.toggle_dark')" @click="toggleDark()">
@@ -24,10 +24,7 @@ const toggleLocales = () => {
     <a class="icon-btn" :title="t('button.toggle_langs')" @click="toggleLocales">
       <carbon-language />
     </a>
-    <a href="/about" class="icon-btn" :title="t('button.about')">
-      <carbon-dicom-overlay />
-    </a>
-    <a class="icon-btn" rel="noreferrer" href="https://github.com/baiheeeeeee" target="_blank" title="GitHub">
+    <a class="icon-btn" rel="noreferrer" href="https://github.com/babyfu" target="_blank" title="GitHub">
       <carbon-logo-github />
     </a>
   </nav>
