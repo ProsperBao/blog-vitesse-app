@@ -10,7 +10,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="flex justify-center space-x-2 text-2xl mt-5">
+  <nav class="flex justify-center space-x-2 text-2xl mt-2.1">
     <router-link to="/" :title="t('button.home')" class="icon-btn">
       <carbon-home />
     </router-link>

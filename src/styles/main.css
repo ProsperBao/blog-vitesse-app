@@ -41,3 +41,23 @@ html.dark {
 .icon-btn {
   @apply cursor-pointer outline-none hover:text-l-blue dark:hover:text-d-blue;
 }
+
+.btn-link {
+  @apply 
+    cursor-pointer outline-none w-8 text-xs h-6 leading-none
+    hover:(rounded-0.625rem bg-l-gray-6)
+    dark:hover:(bg-d-gray-3);
+}
+.btn-link.active {
+  @apply 
+  rounded-0.625rem
+    text-l-label-2 bg-l-gray-6
+    dark:(text-d-label bg-d-gray-3);
+}
+
+input[type=text] {
+  @apply 
+    w-full pl-1.875 py-0.4375 outline-none rounded-0.625rem
+    text-l-input bg-l-input caret-l-input placeholder-l-input
+    dark:(text-d-input bg-d-input caret-d-input placeholder-d-input);
+}

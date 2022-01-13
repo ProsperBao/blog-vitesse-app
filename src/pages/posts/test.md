@@ -1,7 +1,7 @@
 ---
 title: Hello world
 date: 2022-01-11T16:45:00Z
-lang: zh
+lang: zh-CN
 duration: 0.1min
 description: Hello world
 ---

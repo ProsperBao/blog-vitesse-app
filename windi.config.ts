@@ -3,9 +3,10 @@ import { defineConfig } from 'windicss/helpers'
 export default defineConfig({
   darkMode: 'class',
   attributify: false,
-  plugins: [],
   theme: {
     colors: {
+      'white': '#fff',
+      'black': '#000',
       'l-red': '#ec4e3d',
       'l-origin': '#f29937',
       'l-yellow': '#f8cc46',
@@ -57,18 +58,38 @@ export default defineConfig({
       'd-placeholder': 'rgba(235,235,245,0.18)',
       'd-link': '#3686f7',
     },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'l-input': '#e8e8e9',
+      'd-input': '#3b3b3e',
+    }),
+    textColor: theme => ({
+      ...theme('colors'),
+      'l-input': '#000000',
+      'd-input': '#ffffff',
+    }),
+    caretColor: theme => ({
+      ...theme('colors'),
+      'l-input': '#2e7df6',
+      'd-input': '#3686f7',
+    }),
+    placeholderColor: theme => ({
+      ...theme('colors'),
+      'l-input': '#808084',
+      'd-input': '#a4a4aa',
+    }),
   },
   alias: {
-    'label': 'text-l-label dark:text-d-label',
-    'label-2th': 'text-l-label-2 dark:text-d-label-2',
-    'label-3th': 'text-l-label-3 dark:text-d-label-3',
-    'label-4th': 'text-l-label-4 dark:text-d-label-4',
+    'app-label': 'text-l-label dark:text-d-label',
+    'app-label-2th': 'text-l-label-2 dark:text-d-label-2',
+    'app-label-3th': 'text-l-label-3 dark:text-d-label-3',
+    'app-label-4th': 'text-l-label-4 dark:text-d-label-4',
 
-    'title-lg': 'text-2.125rem',
-    'title-1': 'text-1.75rem',
-    'title-2': 'text-1.375rem',
-    'title-3': 'text-1.25rem',
-    'content': 'text-1.0625rem',
-    'subtitle': 'text-0.9375rem',
+    'app-title-lg': 'text-2.125rem',
+    'app-title-1': 'text-1.75rem',
+    'app-title-2': 'text-1.375rem',
+    'app-title-3': 'text-1.25rem',
+    'app-content': 'text-1.0625rem',
+    'app-subtitle': 'text-0.9375rem',
   },
 })

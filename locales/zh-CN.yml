@@ -3,24 +3,30 @@ button:
   back: 返回
   go: 确定
   home: 首页
+  ignore_case: 使用忽略大小写
   posts: 文章
+  reg_exp: 使用正则表达式
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
+input:
+  search_input_placeholder: 请输入搜索关键词
+  search_input_placeholder_reg: 请输入 JS 正则
 intro:
   welcome: 欢迎光临
+lang: 中文
 me:
-  name: 福宝
   about: 关于我
   about_front: 关于前端
-  article: 我是福宝，一个专职前端开发人员，略懂一点后端。
-  article_front: 我可能用过一部分小玩意解决了一些小问题，也不算很大的项目，但其他也看了不少相关文档。
-  article_about_vue: 我用的最多的一个框架，我也很喜欢 vue 的设计理念。
-  article_about_nuxt: 原本这个站点我想用 nuxt 或者 nuxt3 的但是我还是放弃了，因为这个站点不需要太多的数据请求和渲染。
-  article_about_electron: 用它写过一个类似于 QQ 或者 messenger 的即使通讯桌面版，还写过一个类似于股票监控的桌面版。
-  article_about_react: 写过一些小玩意，之后考虑写一个移动端的项目？用 React Native?
-  article_about_more: 还有很多，图表？我也忘记了。
   about_future: 未来
+  article: 我是福宝，一个专职前端开发人员，略懂一点后端。
+  article_about_electron: 用它写过一个类似于 QQ 或者 messenger 的即使通讯桌面版，还写过一个类似于股票监控的桌面版。
   article_about_future: 想做的东西太多了，想全职做开源，但是实力不允许，先把这个站点维护好吧。
+  article_about_more: 还有很多，图表？我也忘记了。
+  article_about_nuxt: 原本这个站点我想用 nuxt 或者 nuxt3 的但是我还是放弃了，因为这个站点不需要太多的数据请求和渲染。
+  article_about_react: 写过一些小玩意，之后考虑写一个移动端的项目？用 React Native?
+  article_about_vue: 我用的最多的一个框架，我也很喜欢 vue 的设计理念。
+  article_front: 我可能用过一部分小玩意解决了一些小问题，也不算很大的项目，但其他也看了不少相关文档。
+  name: 福宝
 nav:
   article: 文章
   home: 首页

@@ -1,5 +1,11 @@
 <template>
   <nav class="prose m-auto">
+    <SearchInput
+      v-model:keyword="filter.keyword"
+      v-model:reg="filter.isRegExp"
+      v-model:ignoreCase="filter.ignoreCase"
+    />
+    <SearchFilter />
     <ul>
       <router-link
         v-for="route in posts"
@@ -11,7 +17,7 @@
           <div class="title text-lg">
             {{ route.meta.frontmatter.title }}
             <sup
-              v-if="route.meta.frontmatter.lang === 'zh'"
+              v-if="route.meta.frontmatter.lang === 'zh-CN'"
               class="text-xs border border-current rounded px-1 pb-0.2"
             >中文</sup>
           </div>
@@ -26,11 +32,15 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { formatDate } from '~/composables'
+import { formatDate, matchTitle } from '~/composables'
 
-const props = defineProps<{
-  type?: string
-}>()
+import type { MatchTitleOptions } from '~/composables'
+
+const filter = reactive<Omit<MatchTitleOptions, 'title'>>({
+  keyword: '',
+  isRegExp: false,
+  ignoreCase: false,
+})
 
 const router = useRouter()
 const routes = router.getRoutes()
@@ -39,9 +49,7 @@ const routes = router.getRoutes()
   })
   .sort((a, b) => +new Date(b.meta.frontmatter.date) - +new Date(a.meta.frontmatter.date))
 
-const posts = computed(() =>
-  routes.filter(i => !i.path.endsWith('.html') && i.meta.frontmatter.type === props.type),
-)
+const posts = computed(() => routes.filter(i => matchTitle({ ...filter, title: i.meta.frontmatter.title })))
 </script>
 
 <route lang="yaml">
