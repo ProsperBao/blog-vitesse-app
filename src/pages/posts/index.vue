@@ -5,7 +5,7 @@
       v-model:reg="filter.isRegExp"
       v-model:ignoreCase="filter.ignoreCase"
     />
-    <SearchFilter />
+    <!-- <SearchFilter /> -->
     <ul>
       <router-link
         v-for="route in posts"

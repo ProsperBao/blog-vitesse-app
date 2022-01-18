@@ -3,11 +3,17 @@ button:
   back: Back
   go: GO
   home: Home
+  ignore_case: Use ignore case
   posts: article
+  reg_exp: Use regular expressions
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+input:
+  search_input_placeholder: Please enter the search keyword
+  search_input_placeholder_reg: Please enter JS regular
 intro:
   welcome: Welcome
+lang: English
 me:
   about: About me
   about_front: About the front end
@@ -44,4 +50,3 @@ nav:
 not-found: Not found
 status:
   loading: Loading
-lang: English

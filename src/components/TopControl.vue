@@ -24,7 +24,7 @@ const toggleLocales = () => {
     <a class="icon-btn" :title="t('button.toggle_langs')" @click="toggleLocales">
       <carbon-language />
     </a>
-    <a class="icon-btn" rel="noreferrer" href="https://github.com/babyfu" target="_blank" title="GitHub">
+    <a class="icon-btn" rel="noreferrer" href="https://github.com/FuBaooo" target="_blank" title="GitHub">
       <carbon-logo-github />
     </a>
   </nav>

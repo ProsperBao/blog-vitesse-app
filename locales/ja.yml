@@ -3,11 +3,17 @@ button:
   back: 戻る
   go: 進む
   home: ホーム
+  ignore_case: 大文字と小文字を区別しない
   posts: 記事
+  reg_exp: 正規表現を使用する
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
+input:
+  search_input_placeholder: 検索キーワードを入力してください
+  search_input_placeholder_reg: JSレギュラーを入力してください
 intro:
   welcome: ようこそ。
+lang: 日本語
 me:
   about: 私について
   about_front: フロントエンドについて
@@ -32,4 +38,3 @@ nav:
 not-found: 見つかりませんでした
 status:
   loading: 読み込み中
-lang: 日本語

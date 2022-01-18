@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 <template>
   <div class="prose m-auto">
-    <h2>BabyFu</h2>
+    <h2>FuBao</h2>
     <h4>{{ t('me.about') }}</h4>
     <p>
       {{ t('me.article') }}
