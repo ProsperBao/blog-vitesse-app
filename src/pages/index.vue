@@ -21,9 +21,9 @@ const { t } = useI18n()
           {{ t('me.article_about_vue') }}
         </li>
         <li>
-          <a href="https://nuxtjs.org/" title="nuxt.js">nuxt.js</a>
+          <a href="https://nuxtjs.org/" title="nuxt.js">Nuxt.js</a>
           &
-          <a href="https://v3.nuxtjs.org/" title="nuxt3.js">nuxt3.js</a>
+          <a href="https://v3.nuxtjs.org/" title="nuxt3.js">Nuxt3.js</a>
           {{ t('me.article_about_nuxt') }}
         </li>
         <li>
@@ -31,7 +31,7 @@ const { t } = useI18n()
           {{ t('me.article_about_electron') }}
         </li>
         <li>
-          <a href="https://react.docschina.org/" title="react">react</a>
+          <a href="https://react.docschina.org/" title="react">React</a>
           {{ t('me.article_about_react') }}
         </li>
         <li>
