@@ -12,8 +12,11 @@ tags: css,svg
 # CSS 根据路径执行动画
 
 朋友最近遇到个需求，给了两张图，如下：
+<div style="text-align: center;">
 
 ![icons_login_arrow](https://gitee.com/baiheee/learn-typora-img/raw/master/202201220913084.png)
+
+</div>
 
 <div style="text-align: center;">[图1]</div>
 
@@ -204,7 +207,7 @@ function ellipse2path(cx, cy, rx, ry) {
 
 效果如图：
 
-![2022-01-22 10-22-17.2022-01-22 10_23_53](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221031857.gif)
+![2022-01-22 10-22-17.2022-01-22 10_23_53](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221121956.gif)
 
 过度太突兀了怎么办？那就继续给动画加亿点细节
 
