@@ -76,7 +76,7 @@ tags: css,svg
 
 ![image-20220122092954380](https://gitee.com/baiheee/learn-typora-img/raw/master/202201220929415.png)
 
-3. 确定 `offset-path` 路径
+## 确定 `offset-path` 路径
 
 如何确定 `offset-path` 的路径呢，正如上门所述 `offset-path` 的参数和 `SVG` 的标签和属性很类似，所以我们可以用 `SVG` 的标签和属性来构造出一个椭圆的路径。
 
@@ -140,6 +140,8 @@ function ellipse2path(cx, cy, rx, ry) {
 ![image-20220122101710962](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221017001.png)
 
 箭头反转过来了，符合我们要求了，接下来就很简单了加上 `animation` 动画就可以动起来了。
+
+## 加上点动画
 
 ```css
 .arrow {
@@ -209,6 +211,7 @@ function ellipse2path(cx, cy, rx, ry) {
 
 ![2022-01-22 10-22-17.2022-01-22 10_23_53](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221121956.gif)
 
+## 加上亿点点细节
 过度太突兀了怎么办？那就继续给动画加亿点细节
 
 ```css
@@ -290,7 +293,7 @@ function ellipse2path(cx, cy, rx, ry) {
       }
 }
 ```
-
+## 大功告成
 最终效果：
 
 ![2022-01-22 10-36-29.2022-01-22 10_37_01](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221037047.gif)
