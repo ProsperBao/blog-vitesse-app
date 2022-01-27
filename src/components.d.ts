@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     BackgroundGalaxy: typeof import('./components/BackgroundGalaxy.vue')['default']
+    'Carbon:navaidVortac': typeof import('~icons/carbon/navaid-vortac')['default']
     CarbonBook: typeof import('~icons/carbon/book')['default']
     CarbonHome: typeof import('~icons/carbon/home')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
@@ -19,6 +20,7 @@ declare module 'vue' {
     SearchInput: typeof import('./components/search/SearchInput.vue')['default']
     TodayList: typeof import('./components/TodayList.vue')['default']
     TopControl: typeof import('./components/TopControl.vue')['default']
+    WasmHandlePicture: typeof import('./components/demo/wasm-handle-picture.vue')['default']
   }
 }
 

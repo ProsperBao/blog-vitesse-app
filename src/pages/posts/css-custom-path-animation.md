@@ -1,10 +1,11 @@
 ---
 title: CSS 路径动画
-date: 2022-01-22T16:45:00Z
+date: 2022-01-22 16:45:00
 lang: zh-CN
 duration: 5min
 description: CSS 自定义路径动画
 tags: css,svg
+type: post
 ---
 
 [[toc]]

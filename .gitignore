@@ -7,3 +7,12 @@ dist-ssr
 node_modules
 .idea/
 *.log
+
+# rust
+target/
+Cargo.lock
+# pkg/
+
+/libs
+/dist
+/.rsw

@@ -1,11 +1,13 @@
 button:
   about: 关于
   back: 返回
+  demos: 例子
   go: 确定
   home: 首页
   ignore_case: 使用忽略大小写
   posts: 文章
   reg_exp: 使用正则表达式
+  choose_picture: 选择图片
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
 input:

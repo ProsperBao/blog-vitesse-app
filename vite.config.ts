@@ -19,6 +19,7 @@ import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 // @ts-expect-error
 import TOC from 'markdown-it-table-of-contents'
+import ViteRsw from 'vite-plugin-rsw'
 import { slugify } from './scripts/slugify'
 
 const markdownWrapperClasses = 'prose m-auto text-left'
@@ -32,6 +33,13 @@ export default defineConfig({
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
+    }),
+
+    ViteRsw({
+      cli: 'pnpm',
+      crates: [
+        { name: '@rsw/wasm-image', mode: 'no-install' },
+      ],
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages

@@ -42,6 +42,7 @@ const filter = reactive<Omit<MatchTitleOptions, 'title'>>({
   ignoreCase: false,
 })
 
+const route = useRoute()
 const router = useRouter()
 const routes = router.getRoutes()
   .filter((i) => {
@@ -49,7 +50,7 @@ const routes = router.getRoutes()
   })
   .sort((a, b) => +new Date(b.meta.frontmatter.date) - +new Date(a.meta.frontmatter.date))
 
-const posts = computed(() => routes.filter(i => matchTitle({ ...filter, title: i.meta.frontmatter.title })))
+const posts = computed(() => routes.filter(i => i.meta.frontmatter.type === route.query.type && matchTitle({ ...filter, title: i.meta.frontmatter.title })))
 </script>
 
 <route lang="yaml">

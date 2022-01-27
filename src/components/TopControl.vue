@@ -14,8 +14,11 @@ const toggleLocales = () => {
     <router-link to="/" :title="t('button.home')" class="icon-btn">
       <carbon-home />
     </router-link>
-    <router-link to="/posts" :title="t('button.posts')" class="icon-btn">
+    <router-link to="/posts?type=post" :title="t('button.posts')" class="icon-btn">
       <carbon-book />
+    </router-link>
+    <router-link to="/posts?type=demo" :title="t('button.demos')" class="icon-btn">
+      <carbon:navaid-vortac />
     </router-link>
     <a class="icon-btn" :title="t('button.toggle_dark')" @click="toggleDark()">
       <carbon-moon v-if="isDark" />
