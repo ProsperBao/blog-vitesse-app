@@ -84,9 +84,9 @@ async function load(module, imports) {
 }
 
 async function init(input) {
-    if (typeof input === 'undefined') {
-        input = new URL('wasm_image_bg.wasm', import.meta.url);
-    }
+    // if (typeof input === 'undefined') {
+    //     input = new URL('wasm_image_bg.wasm', import.meta.url);
+    // }
     const imports = {};
 
 
