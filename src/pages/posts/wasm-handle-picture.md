@@ -122,6 +122,9 @@ pub fn append_img(image_src: String) -> Result<(), JsValue> {
 
 ![image-20211028110005268](https://gitee.com/baiheee/learn-typora-img/raw/master/202110281100310.png)
 
+
+[试一试 Demo](/posts/test-use-wasm)
+
 <route lang="yaml">
 meta:
   layout: main

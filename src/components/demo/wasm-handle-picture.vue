@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import init, { grayscale } from 'wasm-image'
+import init, { grayscale } from '~/assets/wasm/image-handle/wasm_image'
 const { t } = useI18n()
 const after = ref('')
 const before = ref('')
@@ -36,7 +36,7 @@ const onChange = (e: Event) => {
         const result = this.result as ArrayBuffer
         const uint8Array = new Uint8Array(result)
         init().then(() => {
-          after.value = grayscale(uint8Array)
+          after.value = grayscale(uint8Array) as unknown as string
           loading.value = false
         })
           .catch(() => {

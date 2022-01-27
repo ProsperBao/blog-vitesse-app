@@ -35,7 +35,6 @@ specifiers:
   pinia: ^2.0.9
   pnpm: ^6.25.1
   prism-theme-vars: ^0.2.2
-  rsw-node: ^1.0.2
   typescript: ^4.5.4
   unplugin-auto-import: ^0.5.9
   unplugin-icons: ^0.13.0
@@ -45,7 +44,6 @@ specifiers:
   vite-plugin-md: ^0.11.7
   vite-plugin-pages: ^0.19.9
   vite-plugin-pwa: ^0.11.12
-  vite-plugin-rsw: ^1.10.2
   vite-plugin-vue-layouts: ^0.5.0
   vite-plugin-windicss: ^1.6.2
   vite-ssg: ^0.17.5
@@ -97,7 +95,6 @@ devDependencies:
   markdown-it-prism: registry.npmmirror.com/markdown-it-prism/2.2.2
   markdown-it-table-of-contents: registry.npmmirror.com/markdown-it-table-of-contents/0.6.0
   pnpm: registry.npmmirror.com/pnpm/6.25.1
-  rsw-node: registry.npmmirror.com/rsw-node/1.0.2
   typescript: registry.npmmirror.com/typescript/4.5.4
   unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.5.9_@vueuse+core@7.5.3+vite@2.7.10
   unplugin-icons: registry.npmmirror.com/unplugin-icons/0.13.0_4af608186f67ba0b0ce2a847876acdaf
@@ -107,7 +104,6 @@ devDependencies:
   vite-plugin-md: registry.npmmirror.com/vite-plugin-md/0.11.7_vite@2.7.10
   vite-plugin-pages: registry.npmmirror.com/vite-plugin-pages/0.19.9_4af608186f67ba0b0ce2a847876acdaf
   vite-plugin-pwa: registry.npmmirror.com/vite-plugin-pwa/0.11.12_vite@2.7.10
-  vite-plugin-rsw: registry.npmmirror.com/vite-plugin-rsw/1.10.2
   vite-plugin-vue-layouts: registry.npmmirror.com/vite-plugin-vue-layouts/0.5.0_356ec39c15e6be83b5da8ae2fd7c7b8a
   vite-plugin-windicss: registry.npmmirror.com/vite-plugin-windicss/1.6.2_vite@2.7.10
   vite-ssg: registry.npmmirror.com/vite-ssg/0.17.5_42d81a8ea2b1cdff2d68d95d507a826b
@@ -307,12 +303,6 @@ packages:
     resolution: {integrity: sha1-Blsq9iM/50dNRII+PeuJckr0K18=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@emmetio/scanner/download/@emmetio/scanner-1.0.0.tgz}
     name: '@emmetio/scanner'
     version: 1.0.0
-    dev: true
-
-  registry.nlark.com/@iarna/toml/2.2.5:
-    resolution: {integrity: sha1-syNmyJtDxvjO+976x3i5yCjjuow=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@iarna/toml/download/@iarna/toml-2.2.5.tgz}
-    name: '@iarna/toml'
-    version: 2.2.5
     dev: true
 
   registry.nlark.com/@nodelib/fs.scandir/2.1.5:
@@ -8477,21 +8467,6 @@ packages:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
-  registry.npmmirror.com/rsw-node/1.0.2:
-    resolution: {integrity: sha1-wFKaFORsUcGGQFqv2Lkbn/bLy8Q=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rsw-node/download/rsw-node-1.0.2.tgz}
-    name: rsw-node
-    version: 1.0.2
-    hasBin: true
-    dependencies:
-      chalk: registry.npmmirror.com/chalk/4.1.2
-      debug: registry.npmmirror.com/debug/4.3.3
-      minimist: registry.nlark.com/minimist/1.2.5
-      rimraf: registry.npmmirror.com/rimraf/3.0.2
-      which: registry.nlark.com/which/2.0.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   registry.npmmirror.com/rxjs/7.5.2:
     resolution: {integrity: sha512-PwDt186XaL3QN5qXj/H9DGyHhP3/RYYgZZwqBv9Tv8rsAaiwFH1IsJJlcgD37J7UW5a6O67qX0KWKS3/pu0m4w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rxjs/download/rxjs-7.5.2.tgz}
     name: rxjs
@@ -9052,22 +9027,6 @@ packages:
     transitivePeerDependencies:
       - '@types/babel__core'
       - acorn
-      - supports-color
-    dev: true
-
-  registry.npmmirror.com/vite-plugin-rsw/1.10.2:
-    resolution: {integrity: sha512-rsvy3A+1K0eyGD+qt12yPn2yHH2sUK6e6WanQ/ZAlF1sTQQRNorOjT+JKUSIuYNCkRHz3FcPoU/Mz6NlwYlpzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-rsw/download/vite-plugin-rsw-1.10.2.tgz}
-    name: vite-plugin-rsw
-    version: 1.10.2
-    dependencies:
-      '@iarna/toml': registry.nlark.com/@iarna/toml/2.2.5
-      chalk: registry.npmmirror.com/chalk/4.1.2
-      chokidar: registry.npmmirror.com/chokidar/3.5.2
-      debug: registry.npmmirror.com/debug/4.3.3
-      fast-glob: registry.npmmirror.com/fast-glob/3.2.10
-      rsw-node: registry.npmmirror.com/rsw-node/1.0.2
-      which: registry.nlark.com/which/2.0.2
-    transitivePeerDependencies:
       - supports-color
     dev: true
 

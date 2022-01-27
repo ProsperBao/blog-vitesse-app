@@ -120,6 +120,7 @@ yarn add vite-plugin-rsw -D
 
 ![image-20211015172546827](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151725877.png)
 
+
 <route lang="yaml">
 meta:
   layout: main
