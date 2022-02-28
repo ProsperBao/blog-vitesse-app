@@ -8,6 +8,8 @@ tags: typescript,javascript,lua,json
 type: post
 ---
 
+[[toc]]
+
 # 关于小工具需要 Lua 解析成 JSON 的那些事
 
 ## 背景
