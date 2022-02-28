@@ -10,8 +10,6 @@ type: post
 
 [[toc]]
 
-# 关于小工具需要 Lua 解析成 JSON 的那些事
-
 ## 背景
 
 最近在开发一个饥荒服务器管理工具，需要对饥荒的 mod 进行管理/配置，有的 mod 是有 modinfo.lua 这个文件的，但是js并没有办法直接读取 lua 并执行，所以找到了一个 luaparse 解析成 ast 树，然后通过对 ast 的处理，处理成 json 文件。
