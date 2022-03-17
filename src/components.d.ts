@@ -5,15 +5,13 @@
 declare module 'vue' {
   export interface GlobalComponents {
     BackgroundGalaxy: typeof import('./components/BackgroundGalaxy.vue')['default']
-    'Carbon:navaidVortac': typeof import('~icons/carbon/navaid-vortac')['default']
+    'Carbon:machineLearning': typeof import('~icons/carbon/machine-learning')['default']
     CarbonBook: typeof import('~icons/carbon/book')['default']
     CarbonHome: typeof import('~icons/carbon/home')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
-    CarbonSearch: typeof import('~icons/carbon/search')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
-    CarbonWarning: typeof import('~icons/carbon/warning')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Post: typeof import('./components/Post.vue')['default']
     SearchFilter: typeof import('./components/search/SearchFilter.vue')['default']

@@ -20,6 +20,9 @@ const toggleLocales = () => {
     <!-- <router-link to="/posts?type=demo" :title="t('button.demos')" class="icon-btn">
       <carbon:navaid-vortac />
     </router-link> -->
+    <router-link to="/posts?type=learn" :title="t('button.learn')" class="icon-btn">
+      <carbon:machine-learning />
+    </router-link>
     <a class="icon-btn" :title="t('button.toggle_dark')" @click="toggleDark()">
       <carbon-moon v-if="isDark" />
       <carbon-sun v-else />
