@@ -426,8 +426,8 @@ export class StarField {
     // #fuckthewall lol
     window.addEventListener('beforeunload', () => this.rePopulateStarField())
 
-    window.addEventListener('focus', () => this.play(), false)
-    window.addEventListener('blur', () => this.pause(), false)
+    // window.addEventListener('focus', () => this.play(), false)
+    // window.addEventListener('blur', () => this.pause(), false)
     // not in use yet
     // document.addEventListener("deviceorientation", (e) => this.handleOrientation(e), true);
   }

@@ -43,8 +43,3 @@ const { t } = useI18n()
     <p>{{ t('me.article_about_future') }}</p>
   </div>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: main
-</route>

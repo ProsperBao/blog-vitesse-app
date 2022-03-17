@@ -10,18 +10,22 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="flex justify-center space-x-2 text-2xl mt-2.1">
-    <router-link to="/" :title="t('button.home')" class="icon-btn">
-      <carbon-home />
+  <nav class="flex justify-center space-x-4 text-xl mt-2.1 pb-1 <md:space-x-3">
+    <router-link to="/" :title="t('button.home')">
+      <span class="text-base align-top <md:hidden">{{ t('button.home') }}</span>
+      <carbon:home class="md:hidden icon-btn" />
     </router-link>
-    <router-link to="/posts?type=post" :title="t('button.posts')" class="icon-btn">
-      <carbon-book />
+    <router-link to="/posts?type=post" :title="t('button.posts')">
+      <span class="text-base align-top <md:hidden">{{ t('button.posts') }}</span>
+      <carbon:notebook class="md:hidden icon-btn" />
     </router-link>
-    <!-- <router-link to="/posts?type=demo" :title="t('button.demos')" class="icon-btn">
-      <carbon:navaid-vortac />
-    </router-link> -->
-    <router-link to="/posts?type=learn" :title="t('button.learn')" class="icon-btn">
-      <carbon:machine-learning />
+    <router-link to="/posts?type=learn" :title="t('button.learn')">
+      <span class="text-base align-top <md:hidden">{{ t('button.learn') }}</span>
+      <carbon:microscope class="md:hidden icon-btn" />
+    </router-link>
+    <router-link to="/projects" :title="t('button.project')">
+      <span class="text-base align-top <md:hidden">{{ t('button.project') }}</span>
+      <carbon:direct-link class="md:hidden icon-btn" />
     </router-link>
     <a class="icon-btn" :title="t('button.toggle_dark')" @click="toggleDark()">
       <carbon-moon v-if="isDark" />

@@ -725,7 +725,3 @@ Ch and
 
 针对大部分 mod 的配置文件解析是成功且效果不错的，但是小部分 mod 有使用函数等额外情况，因为个人知识以及能力有限，所以最终的结果是放弃这个 Lua 解析 JSON 的方案，转为直接使用 `fengari-web` 这个方案直接加载一个 Lua 的运行器，并把结果解析返回。
 
-<route lang="yaml">
-meta:
-  layout: main
-</route>

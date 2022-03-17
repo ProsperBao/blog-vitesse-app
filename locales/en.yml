@@ -1,13 +1,27 @@
 button:
+  Challenges: Challenge
   about: About
   back: Back
+  challenges: challenge
   go: GO
   home: Home
   ignore_case: Use ignore case
-  posts: article
+  learn: Learn
+  posts: Posts
+  project: Project
   reg_exp: Use regular expressions
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+desc:
+  dst-cloud-manage: A Don't Starve Online server management tool, using Electron
+  typescript-challenges: >-
+    Get a better understanding of TS's type system, write your own type tool, or
+    simply enjoy the challenge
+description:
+  dst-cloud-manage: A Don't Starve Online server management tool, using Electron
+  typescript-challenges: >-
+    Get a better understanding of TS's type system, write your own type tool, or
+    simply enjoy the challenge
 input:
   search_input_placeholder: Please enter the search keyword
   search_input_placeholder_reg: Please enter JS regular
@@ -50,3 +64,5 @@ nav:
 not-found: Not found
 status:
   loading: Loading
+title:
+  home: Home

@@ -127,7 +127,3 @@ Array.prototype.overwriteReduceRight = function (cb, initalValue) {
 }
 ```
 
-<route lang="yaml">
-meta:
-  layout: main
-</route>

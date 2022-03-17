@@ -125,7 +125,3 @@ pub fn append_img(image_src: String) -> Result<(), JsValue> {
 
 [试一试 Demo](/posts/test-use-wasm)
 
-<route lang="yaml">
-meta:
-  layout: main
-</route>

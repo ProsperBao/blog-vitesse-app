@@ -8,21 +8,21 @@
     <!-- <SearchFilter /> -->
     <ul>
       <router-link
-        v-for="route in posts"
-        :key="route.path"
+        v-for="post in posts"
+        :key="post.path"
         class="item block font-normal mb-6 mt-2 no-underline"
-        :to="route.path"
+        :to="post.path"
       >
         <li class="no-underline">
           <div class="title text-lg">
-            {{ route.meta.frontmatter.title }}
+            {{ post.meta.frontmatter.title }}
             <sup
-              v-if="route.meta.frontmatter.lang === 'zh-CN'"
+              v-if="post.meta.frontmatter.lang === 'zh-CN'"
               class="text-xs border border-current rounded px-1 pb-0.2"
             >中文</sup>
           </div>
           <div class="time opacity-50 text-sm -mt-1">
-            {{ formatDate(route.meta.frontmatter.date) }} <span v-if="route.meta.frontmatter.duration" class="opacity-50">· {{ route.meta.frontmatter.duration }}</span>
+            {{ formatDate(post.meta.frontmatter.date) }} <span v-if="post.meta.frontmatter.duration" class="opacity-50">· {{ post.meta.frontmatter.duration }}</span>
           </div>
         </li>
       </router-link>
@@ -52,8 +52,3 @@ const routes = router.getRoutes()
 
 const posts = computed(() => routes.filter(i => i.meta.frontmatter.type === route.query.type && matchTitle({ ...filter, title: i.meta.frontmatter.title })))
 </script>
-
-<route lang="yaml">
-meta:
-  layout: main
-</route>

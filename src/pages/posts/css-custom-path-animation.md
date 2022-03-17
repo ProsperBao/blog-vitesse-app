@@ -299,7 +299,3 @@ function ellipse2path(cx, cy, rx, ry) {
 
 ![2022-01-22 10-36-29.2022-01-22 10_37_01](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221037047.gif)
 
-<route lang="yaml">
-meta:
-  layout: main
-</route>

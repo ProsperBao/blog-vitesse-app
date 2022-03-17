@@ -1,6 +1,7 @@
 button:
   about: 关于
   back: 返回
+  challenges: 挑战
   choose_picture: 选择图片
   demos: 例子
   go: 确定
@@ -8,9 +9,13 @@ button:
   ignore_case: 使用忽略大小写
   learn: 学习
   posts: 文章
+  project: 项目
   reg_exp: 使用正则表达式
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
+desc:
+  dst-cloud-manage: 一个饥荒联机版的服务器管理工具，使用 Electron
+  typescript-challenges: 更好的了解 TS 的类型系统，编写自己的类型工具，或者只是单纯的享受挑战的乐趣
 input:
   search_input_placeholder: 请输入搜索关键词
   search_input_placeholder_reg: 请输入 JS 正则
