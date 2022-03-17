@@ -29,6 +29,8 @@ const { t } = useI18n()
         <li>
           <a href="https://www.electronjs.org/" title="electron">Electron</a>
           {{ t('me.article_about_electron') }}
+          <a href="https://github.com/FuBaooo/dst-cloud-manage" title="DSTCloudManage">DSTCloudManage</a>
+          {{ t('me.article_about_electron1') }}
         </li>
         <li>
           <a href="https://react.docschina.org/" title="react">React</a>

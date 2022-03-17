@@ -1,9 +1,6 @@
 button:
-  Challenges: Challenge
-  about: About
   back: Back
-  challenges: challenge
-  go: GO
+  challenges: Challenge
   home: Home
   ignore_case: Use ignore case
   learn: Learn
@@ -17,17 +14,11 @@ desc:
   typescript-challenges: >-
     Get a better understanding of TS's type system, write your own type tool, or
     simply enjoy the challenge
-description:
-  dst-cloud-manage: A Don't Starve Online server management tool, using Electron
-  typescript-challenges: >-
-    Get a better understanding of TS's type system, write your own type tool, or
-    simply enjoy the challenge
+description: {}
 input:
   search_input_placeholder: Please enter the search keyword
   search_input_placeholder_reg: Please enter JS regular
-intro:
-  welcome: Welcome
-lang: English
+intro: {}
 me:
   about: About me
   about_front: About the front end
@@ -36,8 +27,9 @@ me:
     I'm Fubao, a full-time front-end developer who knows a little about
     back-end.
   article_about_electron: >-
-    I have used it to write a desktop version of instant messaging similar to QQ
-    or messenger, and a desktop version similar to stock monitoring.
+    Wrote the desktop version with it for instant messaging, stock monitoring,
+    and a game server management tool for an ongoing project
+  article_about_electron1: .
   article_about_future: >-
     There are too many things I want to do, and I want to do open source
     full-time, but my strength does not allow it, so I need to maintain this
@@ -57,12 +49,7 @@ me:
   article_front: >-
     I may have used some gadgets to solve some small problems, and it is not a
     big project, but others have also read a lot of related documents.
-  name: Fu Bao
-nav:
-  article: article
-  home: home
+nav: {}
 not-found: Not found
-status:
-  loading: Loading
-title:
-  home: Home
+status: {}
+title: {}

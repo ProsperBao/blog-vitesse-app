@@ -67,5 +67,3 @@ const routes = router.getRoutes()
     return acc
   }, [] as LevelListItem[])
 </script>
-
-
