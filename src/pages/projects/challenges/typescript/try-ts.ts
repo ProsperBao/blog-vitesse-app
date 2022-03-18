@@ -14,7 +14,7 @@
 //   title: 'Clean room',
 //   completed: false,
 // }
-// Easy 1
+// Easy 2
 // interface Todo {
 //   title: string
 //   description: string
@@ -25,3 +25,9 @@
 // }
 // todo.title = 'Hello' // Error: cannot reassign a readonly property
 // todo.description = 'barFoo' // Error: cannot reassign a readonly property
+// Easy 3
+const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
+
+type result = TupleToObject<typeof tuple>
+// expected { tesla: 'tesla', 'model 3': 'model 3', 'model X': 'model X', 'model Y': 'model Y'}
+type TupleToObject<T extends readonly any[]> = {[key in T[number]]: key}
