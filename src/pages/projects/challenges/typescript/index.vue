@@ -47,7 +47,7 @@ const routes = router.getRoutes()
   .filter((i) => {
     return i.path.startsWith('/projects/challenges/typescript') && i.meta.frontmatter?.date
   })
-  .sort((a, b) => +new Date(a.meta.frontmatter.date) - +new Date(b.meta.frontmatter.date))
+  .sort((a, b) => +new Date(b.meta.frontmatter.date) - +new Date(a.meta.frontmatter.date))
   .reduce((acc, cur) => {
     const { level, levelTitle, title, date } = cur.meta.frontmatter
     let levelIndex = acc.findIndex(i => level === i.level)
