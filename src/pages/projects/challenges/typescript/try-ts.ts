@@ -64,3 +64,20 @@
 // Easy 10 ------------------------------------
 // type isPillarMen = Includes<['Kars', 'Esidisi', 'Wamuu', 'Santana'], 'ars'> // expected to be `false`
 // type Includes<T extends unknown[], U> = T extends [infer first, ...infer rest] ? U extends first ? true : Includes<rest, U> : false
+// Easy 11 ------------------------------------
+// type Result = Push<[1, 2], '3'> // [1, 2, '3']
+// type Push<T extends unknown[], U> = [...T, U]
+// Easy 12 ------------------------------------
+// type Result = Unshift<[1, 2], 0> // [0, 1, 2,]
+// type Unshift<T extends unknown[], U> = [U, ...T]
+// Easy 13 ------------------------------------
+// declare function f1(arg: { a: number; b: string }): void
+// type T0 = myParameters<() => string> // []
+// type T1 = myParameters<(s: string) => void>// [s: string]
+// type T2 = myParameters<<T>(arg: T) => T>// [arg: unknown]
+// type T3 = myParameters<typeof f1>// [arg: { a: number; b: string; }]
+// type T4 = myParameters<any>// unknown[]
+// type T5 = myParameters<never> // never
+// type T6 = myParameters<string>// never
+// type T7 = myParameters<Function>// never
+// type myParameters<T extends (...args: any) => any> = T extends (...args: infer U) => any ? U : never
