@@ -4,7 +4,7 @@
       <h3 class="mt-10 font-bold">
         {{ route.title }}
       </h3>
-      <ul class="ml-10">
+      <ul class="ml-10 project-grid">
         <router-link
           v-for="child in route.children"
           :key="child.path"
@@ -14,9 +14,6 @@
           <li class="no-underline">
             <div class="title text-lg">
               {{ child.title }}
-              <sup
-                class="text-xs border border-current rounded px-1 pb-0.2"
-              >中文</sup>
             </div>
             <div class="time opacity-50 text-sm -mt-1">
               {{ formatDate(child.date) }}
@@ -67,3 +64,10 @@ const routes = router.getRoutes()
     return acc
   }, [] as LevelListItem[])
 </script>
+
+<style scoped>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+</style>
