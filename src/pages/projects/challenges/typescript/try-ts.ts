@@ -81,3 +81,39 @@
 // type T6 = myParameters<string>// never
 // type T7 = myParameters<Function>// never
 // type myParameters<T extends (...args: any) => any> = T extends (...args: infer U) => any ? U : never
+// Middle 1 ------------------------------------
+// const fn = (v: boolean) => {
+//   if (v)
+//     return 1
+//   else
+//     return 2
+// }
+// type a = MyReturnType<typeof fn> // 应推导出 "1 | 2"
+// type MyReturnType<T extends Function> = T extends (...args: any) => infer R ? R : never
+// Middle 2 ------------------------------------
+// interface Todo {
+//   title: string
+//   description: string
+//   completed: boolean
+// }
+// type TodoPreview = MyOmit<Todo, 'description' | 'title'>
+// const todo: TodoPreview = {
+//   completed: false,
+// }
+// type MyExclude<T, U> = T extends U ? never : T
+// type MyOmit<T, K extends keyof T> = { [P in MyExclude<keyof T, K>]: T[P] }
+// Middle 3 ------------------------------------
+interface Todo {
+  title: string
+  description: string
+  completed: boolean
+}
+const todo: MyReadonly2<Todo, 'title' | 'description'> = {
+  title: 'Hey',
+  description: 'foobar',
+  completed: false,
+}
+todo.title = 'Hello' // Error: cannot reassign a readonly property
+todo.description = 'barFoo' // Error: cannot reassign a readonly property
+todo.completed = true // OK
+type MyReadonly2<T, K extends keyof T> = { [P in keyof T]: T[P] }
