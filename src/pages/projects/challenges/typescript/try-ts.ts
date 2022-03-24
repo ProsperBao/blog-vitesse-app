@@ -103,17 +103,21 @@
 // type MyExclude<T, U> = T extends U ? never : T
 // type MyOmit<T, K extends keyof T> = { [P in MyExclude<keyof T, K>]: T[P] }
 // Middle 3 ------------------------------------
-interface Todo {
-  title: string
-  description: string
-  completed: boolean
-}
-const todo: MyReadonly2<Todo, 'title' | 'description'> = {
-  title: 'Hey',
-  description: 'foobar',
-  completed: false,
-}
-todo.title = 'Hello' // Error: cannot reassign a readonly property
-todo.description = 'barFoo' // Error: cannot reassign a readonly property
-todo.completed = true // OK
-type MyReadonly2<T, K extends keyof T> = { [P in keyof T]: T[P] }
+// interface Todo {
+//   title: string
+//   description: string
+//   completed: boolean
+// }
+// const todo: MyReadonly2<Todo, 'title' | 'description'> = {
+//   title: 'Hey',
+//   description: 'foobar',
+//   completed: false,
+// }
+// todo.title = 'Hello' // Error: cannot reassign a readonly property
+// todo.description = 'barFoo' // Error: cannot reassign a readonly property
+// todo.completed = true // OK
+// type MyExclude<T, U> = T extends U ? never : T
+// type MyOmit<T, K extends keyof T> = { [P in MyExclude<keyof T, K>]: T[P] }
+// type MyReadonly2<T, K extends keyof T = keyof T> = {
+//   readonly [P in K]: T[P]
+// } & MyOmit<T, K>
