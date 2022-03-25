@@ -121,3 +121,7 @@
 // type MyReadonly2<T, K extends keyof T = keyof T> = {
 //   readonly [P in K]: T[P]
 // } & MyOmit<T, K>
+// Middle 4 ------------------------------------
+// type Arr = ['1', '2', '3']
+// type Test = TupleToUnion<Arr> // expected to be '1' | '2' | '3'
+// type TupleToUnion<T extends any[]> = T[number]
