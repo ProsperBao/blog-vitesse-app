@@ -125,3 +125,26 @@
 // type Arr = ['1', '2', '3']
 // type Test = TupleToUnion<Arr> // expected to be '1' | '2' | '3'
 // type TupleToUnion<T extends any[]> = T[number]
+// Middle 5 ------------------------------------
+// type X = {
+//   x: {
+//     a: 1
+//     b: 'hi'
+//   }
+//   y: 'hey'
+// }
+
+// type Expected = {
+//   readonly x: {
+//     readonly a: 1
+//     readonly b: 'hi'
+//   }
+//   readonly y: 'hey'
+// }
+
+// type Todo = DeepReadonly<X> // should be same as `Expected`
+// type DeepReadonly<T> = keyof T extends never ? T : { readonly [k in keyof T]: DeepReadonly<T[k]> }
+const inputEl = document.querySelector('input') as HTMLInputElement
+inputEl.addEventListener('input', (e) => {
+
+})
