@@ -133,7 +133,6 @@
 //   }
 //   y: 'hey'
 // }
-
 // type Expected = {
 //   readonly x: {
 //     readonly a: 1
@@ -141,10 +140,24 @@
 //   }
 //   readonly y: 'hey'
 // }
-
 // type Todo = DeepReadonly<X> // should be same as `Expected`
 // type DeepReadonly<T> = keyof T extends never ? T : { readonly [k in keyof T]: DeepReadonly<T[k]> }
-const inputEl = document.querySelector('input') as HTMLInputElement
-inputEl.addEventListener('input', (e) => {
-
-})
+// Middle 6 ------------------------------------
+// declare const config: Chainable
+// const result = config
+//   .option('foo', 123)
+//   .option('name', 'type-challenges')
+//   .option('bar', { value: 'Hello World' })
+//   .get()
+// type Chainable<Options = {}> = {
+//   option<K extends string, V>(key: K, value: V): Chainable<{ [P in K]: V } & Options>
+//   get(): { [k in keyof Options]: Options[k] }
+// }
+// // 期望 result 的类型是：
+// interface Result {
+//   foo: number
+//   name: string
+//   bar: {
+//     value: string
+//   }
+// }
