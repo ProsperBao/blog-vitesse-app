@@ -15,13 +15,13 @@ type: post
 朋友最近遇到个需求，给了两张图，如下：
 <div style="text-align: center;">
 
-![icons_login_arrow](https://gitee.com/baiheee/learn-typora-img/raw/master/202201220913084.png)
+![icons_login_arrow](https://s2.loli.net/2022/03/28/W5lbdVJqKSmT2Zr.png)
 
 </div>
 
 <div style="text-align: center;">[图1]</div>
 
-![login_banner](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221115961.png)
+![login_banner](https://s2.loli.net/2022/03/28/E4h9FJMdi7lNsXR.png)
 
 <div style="text-align: center;">[图2]</div>
 
@@ -29,7 +29,7 @@ type: post
 
 如下是效果图：
 
-![2022-01-22 10-36-29.2022-01-22 10_37_01](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221037047.gif)
+![2022-01-22 10-36-29.2022-01-22 10_37_01](https://s2.loli.net/2022/03/28/UKv52sTnOj3HY6N.gif)
 
 ## 如何做？
 
@@ -75,7 +75,7 @@ type: post
 
 现在页面看起来是下面这样子的。
 
-![image-20220122092954380](https://gitee.com/baiheee/learn-typora-img/raw/master/202201220929415.png)
+![image-20220122092954380](https://s2.loli.net/2022/03/28/941nek7GfNsCEiK.png)
 
 ## 确定 `offset-path` 路径
 
@@ -87,7 +87,7 @@ type: post
 </svg>
 ```
 
-![image-20220122100344381](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221003429.png)
+![image-20220122100344381](https://s2.loli.net/2022/03/28/W3Uv5GCLxHotmhI.png)
 
 效果如图，椭圆完全覆盖背景图片的虚线椭圆，但是这里就出现了一个问题 `offset-path` 属性里仅 `path` 类型兼容性良好，其他属性兼容性待商榷。所以我们这边需要把 `ellipse` 转换为 `path` 。
 
@@ -120,7 +120,7 @@ function ellipse2path(cx, cy, rx, ry) {
 
 效果如图：
 
-![image-20220122101521250](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221015291.png)
+![image-20220122101521250](https://s2.loli.net/2022/03/28/FkmXaLSMzD95s2P.png)
 
 发现问题没有，这个图标是反的，那怎么处理呢，对添加一个 `transform` 属性让他旋转：
 
@@ -138,7 +138,7 @@ function ellipse2path(cx, cy, rx, ry) {
 
 效果如下图：
 
-![image-20220122101710962](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221017001.png)
+![image-20220122101710962](https://s2.loli.net/2022/03/28/t5d6sRHW1TPjVeC.png)
 
 箭头反转过来了，符合我们要求了，接下来就很简单了加上 `animation` 动画就可以动起来了。
 
@@ -167,7 +167,7 @@ function ellipse2path(cx, cy, rx, ry) {
 
 效果如下：
 
-![2022-01-22 10-22-17.2022-01-22 10_23_53](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221024375.gif)
+![2022-01-22 10-22-17.2022-01-22 10_23_53](https://s2.loli.net/2022/03/28/2hgAGapDcwdxVUs.gif)
 
 现在确实也是可以动了，但是6个间隙还是没有，这时候该咋办？
 
@@ -210,7 +210,7 @@ function ellipse2path(cx, cy, rx, ry) {
 
 效果如图：
 
-![2022-01-22 10-22-17.2022-01-22 10_23_53](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221121956.gif)
+![2022-01-22 10-22-17.2022-01-22 10_23_53](https://s2.loli.net/2022/03/28/Dwel8TdnVMQKtIh.gif)
 
 ## 加上亿点点细节
 过度太突兀了怎么办？那就继续给动画加亿点细节
@@ -297,5 +297,5 @@ function ellipse2path(cx, cy, rx, ry) {
 ## 大功告成
 最终效果：
 
-![2022-01-22 10-36-29.2022-01-22 10_37_01](https://gitee.com/baiheee/learn-typora-img/raw/master/202201221037047.gif)
+![2022-01-22 10-36-29.2022-01-22 10_37_01](https://s2.loli.net/2022/03/28/UKv52sTnOj3HY6N.gif)
 

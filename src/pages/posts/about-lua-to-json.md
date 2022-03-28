@@ -7,14 +7,13 @@ description: 关于小工具需要 Lua 解析成 JSON 的那些事
 tags: typescript,javascript,lua,json
 type: post
 ---
-
 [[toc]]
 
 ## 背景
 
 最近在开发一个饥荒服务器管理工具，需要对饥荒的 mod 进行管理/配置，有的 mod 是有 modinfo.lua 这个文件的，但是js并没有办法直接读取 lua 并执行，所以找到了一个 luaparse 解析成 ast 树，然后通过对 ast 的处理，处理成 json 文件。
 
-![image-20220228091747660](https://gitee.com/baiheee/learn-typora-img/raw/master/202202280917893.png)
+![image-20220228091747660](https://s2.loli.net/2022/03/28/Pw1TSjEMqlKObzI.png)
 
 ## 着手尝试
 
@@ -26,15 +25,15 @@ type: post
 
 直接安装，上面有附带 luaparse 解析出来的 ast 各种节点 type。
 
-![image-20220228092110604](https://gitee.com/baiheee/learn-typora-img/raw/master/202202280921643.png)
+![image-20220228092110604](https://s2.loli.net/2022/03/28/kARubdoZMmNxpTv.png)
 
 ### 处理第一步，先从 Chunk 开始
 
 通过阅读 `@types/luaparse` 和解析出来的真实 ast 树开始实行第一步。
 
-![image-20220228100042425](https://gitee.com/baiheee/learn-typora-img/raw/master/202202281000507.png)
+![image-20220228100042425](https://s2.loli.net/2022/03/28/so9zRPTiDYIBdUJ.png)
 
-![image-20220228100102956](https://gitee.com/baiheee/learn-typora-img/raw/master/202202281001996.png)
+![image-20220228100102956](https://s2.loli.net/2022/03/28/LQ3C46M2NsPZhAj.png)
 
 通过上面两张图可以看出，如果要处理 ast 树变成需要的 json 需要递归处理，我们这里并不需要局部作用域，我们的目标仅仅是为了读取最终的 `configuration_options`，所以直接使用全局作用域保存最终的结果即可。
 

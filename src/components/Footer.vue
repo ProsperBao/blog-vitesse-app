@@ -5,7 +5,7 @@
     </div>
     <div class="flex justify-center space-x-1">
       <span>© 2021 – 2022 </span>
-      <img src="https://gitee.com/baiheee/learn-typora-img/raw/master/202201111151226.gif" class="w-4 h-4" alt="icon">
+      <img src="https://s2.loli.net/2022/03/28/dOhWziZwsHv2XjK.png" class="w-4 h-4" alt="icon">
       <span>福宝</span>
     </div>
   </section>

@@ -26,7 +26,7 @@ cargo new --lib test-wasm
 
 执行完上面的命令之后会看见生成了一个 Rust 项目
 
-![image-20211015162523461](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151625689.png)
+![image-20211015162523461](https://s2.loli.net/2022/03/28/pL5H7ZiEwCTV91f.png)
 
 ```shell
 +-- Cargo.toml
@@ -38,7 +38,7 @@ cargo new --lib test-wasm
 
 在 `lib.rs` 里有一些无用的测试代码，可以直接删掉
 
-![image-20211015162849089](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151628135.png)
+![image-20211015162849089](https://s2.loli.net/2022/03/28/7xlK5ZWnizOSBam.png)
 
 ```rust
 extern crate wasm_bindgen;
@@ -56,7 +56,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-![image-20211015163352693](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151633740.png)
+![image-20211015163352693](https://s2.loli.net/2022/03/28/RS97HcNUF3PV1jk.png)
 
 写上上面代码，可以看到编译器检查是不通过的，原因是引入了未安装的依赖包
 
@@ -83,7 +83,7 @@ cargo build
 
 
 
-![image-20211015163738384](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151637441.png)
+![image-20211015163738384](https://s2.loli.net/2022/03/28/37qLmPtNDMGkz9X.png)
 
 之后就可以编译器就通过检测了
 
@@ -94,11 +94,11 @@ cargo build
 wasm-pack build --scope test
 ```
 
-![image-20211015164353189](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151643242.png)
+![image-20211015164353189](https://s2.loli.net/2022/03/28/NWfmsbBXF4CQRdc.png)
 
 接下来，目录底下生成了一个 pkg 文件夹
 
-![image-20211015164631567](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151646612.png)
+![image-20211015164631567](https://s2.loli.net/2022/03/28/8Qlqjh3XV7mznGZ.png)
 
 在项目里引入 pkg 文件夹就可以使用 wasm了
 
@@ -106,7 +106,7 @@ wasm-pack build --scope test
 
 接下来初始化一个用 vite 初始化一个 vue 项目或者其他项目也行，把 pkg 放进 node_modules 里
 
-![image-20211015165350372](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151653421.png)
+![image-20211015165350372](https://s2.loli.net/2022/03/28/dNw1gv2rhpxyq9A.png)
 
 接下来就是安装 vite 的插件了
 
@@ -118,6 +118,6 @@ yarn add vite-plugin-rsw -D
 
 接下来就是和使用正常的包一样
 
-![image-20211015172546827](https://gitee.com/baiheee/learn-typora-img/raw/master/202110151725877.png)
+![image-20211015172546827](https://s2.loli.net/2022/03/28/xAoi5fE9zMnDJRp.png)
 
 

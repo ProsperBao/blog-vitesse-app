@@ -12,11 +12,11 @@ type: post
 
 ## 初始化一个项目
 
-![image-20211027180750608](https://gitee.com/baiheee/learn-typora-img/raw/master/202110271807935.png)
+![image-20211027180750608](https://s2.loli.net/2022/03/28/QCsba4WYUjVOA6g.png)
 
 ## 添加使用到的 crate
 
-![image-20211028091333828](https://gitee.com/baiheee/learn-typora-img/raw/master/202201261238984.png)
+![image-20211028091333828](https://s2.loli.net/2022/03/28/szvaV95rO3PuWw2.png)
 
 ## 在 lib.rs 里编写好处理代码
 
@@ -96,30 +96,28 @@ pub fn append_img(image_src: String) -> Result<(), JsValue> {
 
 ## 执行构建 WASM
 
-![image-20211028092200170](https://gitee.com/baiheee/learn-typora-img/raw/master/202110280922212.png)
+![image-20211028092200170](https://s2.loli.net/2022/03/28/zfy5TZrj48WhLFH.png)
 
 构建执行完之后目录会多一个 pkg 目录，之后直接引用就行了
 
-![image-20211028093010043](https://gitee.com/baiheee/learn-typora-img/raw/master/202110280930088.png)
+![image-20211028093010043](https://s2.loli.net/2022/03/28/epNxZuab5wkl6Eo.png)
 
 ## 使用构建好的 WASM
 
-![image-20211028094204703](https://gitee.com/baiheee/learn-typora-img/raw/master/202110280942749.png)
+![image-20211028094204703](https://s2.loli.net/2022/03/28/EWpUmPdLtzJ9jcg.png)
 
 在 vite 项目中，安装好 wasm 插件
 
-![image-20211028095618582](https://gitee.com/baiheee/learn-typora-img/raw/master/202110280956628.png)
+![image-20211028095618582](https://s2.loli.net/2022/03/28/K3Rl5aTkw8xioIf.png)
 
-![image-20211028095641571](https://gitee.com/baiheee/learn-typora-img/raw/master/202110280956611.png)
+![image-20211028095641571](https://s2.loli.net/2022/03/28/BuhVzExyJT23MDK.png)
 
-![image-20211028104012437](https://gitee.com/baiheee/learn-typora-img/raw/master/202110281040485.png)
+![image-20211028104012437](https://s2.loli.net/2022/03/28/r85ABPDawyfjdnk.png)
 
 效果
 
-![image-20211028105935168](https://gitee.com/baiheee/learn-typora-img/raw/master/202110281059214.png)
+![image-20211028105935168](https://s2.loli.net/2022/03/28/XcMNSUhtOwy8pum.png)
 
-
-
-![image-20211028110005268](https://gitee.com/baiheee/learn-typora-img/raw/master/202110281100310.png)
+![image-20211028110005268](https://s2.loli.net/2022/03/28/joYp3MRUXtc6JDN.png)
 
 
