@@ -14,7 +14,7 @@ levelTitle: Middle
 
 例如：
 
-```ts
+```typescript
 const fn = (v: boolean) => {
   if (v)
     return 1

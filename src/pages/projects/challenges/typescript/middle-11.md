@@ -24,8 +24,12 @@ type TrimLeft<S extends string> = S extends `${' '| '\n'|'\t'}${infer R}` ? Trim
 
 ### 拆分
 1. `S` 必须要为 `string` 类型
-2. `S` 是否满足 `${' '| '\n'|'\t'}` 开头
+2. `S` 是否满足 ```typescript 
+`${' '| '\n'|'\t'}`
+``` 开头
 3. 因为实际上包含一个联合的字符串类型
 4. 所以因为联合类型会自动分配，所以实际上执行推断的时候会转化成
-5. `${' '}${infer R}` ? TrimLeft<R> : S | `${'\n'}${infer R}` ? TrimLeft<R> : S | `${'\t'}${infer R}` ? TrimLeft<R> : S
+5. ```typescript
+`${' '}${infer R}` ? TrimLeft<R> : S | `${'\n'}${infer R}` ? TrimLeft<R> : S | `${'\t'}${infer R}` ? TrimLeft<R> : S
+```
 6. 最终经过递归处理左边的空白字符串，返回正确的推断
