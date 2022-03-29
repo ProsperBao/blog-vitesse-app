@@ -1,5 +1,5 @@
 ---
-title: 
+title: Capitalize
 date: 2022-3-29 11:46:40
 level: 2
 levelTitle: Middle
