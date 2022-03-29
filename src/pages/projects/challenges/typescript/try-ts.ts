@@ -182,7 +182,7 @@
 // type Shift<T extends unknown[]> = T extends [any, ...infer rest] ? rest : never
 // type Push<T extends unknown[], V> = [...T, V]
 // type Unshift<T extends unknown[], V> = [V, ...T]
-// Middle 9 ------------------------------------
+// Middle 10 ------------------------------------
 // interface Cat {
 //   type: 'cat'
 //   breeds: 'Abyssinian' | 'Shorthair' | 'Curl' | 'Bengal'
@@ -194,6 +194,16 @@
 // }
 // type MyDog = LookUp<Cat | Dog, 'dog'> // expected to be `Dog`
 // type LookUp<U, T extends string> = U extends {type: T} ? U : never
-// Middle 10 ------------------------------------
+// Middle 11 ------------------------------------
 // type trimed = TrimLeft<'  Hello World  '> // 应推导出 'Hello World  '
 // type TrimLeft<S extends string> = S extends `${' '| '\n'|'\t'}${infer R}` ? TrimLeft<R> : S
+// Middle 12 ------------------------------------
+// type trimed = Trim<'  Hello World  '> // expected to be 'Hello World'
+// type Trim<S extends string> = S extends `${' '| '\n'|'\t'}${infer L}`
+//   ? Trim<L>
+//   : S extends `${infer R}${' '| '\n'|'\t'}`
+//     ? Trim<R>
+//     : S
+// Middle 13 ------------------------------------
+// type capitalized = MyCapitalize<'hello world'> // expected to be 'Hello world'
+// type MyCapitalize<S extends string> = S extends `${infer L}${infer R}`? `${Uppercase<L>}${R}` : S
