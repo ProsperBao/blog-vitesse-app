@@ -207,3 +207,6 @@
 // Middle 13 ------------------------------------
 // type capitalized = MyCapitalize<'hello world'> // expected to be 'Hello world'
 // type MyCapitalize<S extends string> = S extends `${infer L}${infer R}`? `${Uppercase<L>}${R}` : S
+// Middle 14 ------------------------------------
+// type replaced = Replace<'types are fun!', 'fun', 'awesome'> // 期望是 'types are awesome!'
+// type Replace<S extends string, FROM extends string, TO extends string> = FROM extends '' ? S : S extends `${infer T}${FROM}${infer U}` ? `${T}${TO}${U}`: S
