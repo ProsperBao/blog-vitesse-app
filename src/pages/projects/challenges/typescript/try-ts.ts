@@ -210,3 +210,10 @@
 // Middle 14 ------------------------------------
 // type replaced = Replace<'types are fun!', 'fun', 'awesome'> // 期望是 'types are awesome!'
 // type Replace<S extends string, FROM extends string, TO extends string> = FROM extends '' ? S : S extends `${infer T}${FROM}${infer U}` ? `${T}${TO}${U}`: S
+// Middle 15 ------------------------------------
+type replaced = ReplaceAll<'t y p e s ', ' ', ''> // 期望是 'types'
+type ReplaceAll<S extends string, FROM extends string, TO extends string> = FROM extends ''
+  ? S
+  : S extends `${infer T}${FROM}${infer U}`
+    ? ReplaceAll<`${T}${TO}${U}`, FROM, TO>
+    : S
