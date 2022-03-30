@@ -5,6 +5,7 @@ export interface MatchTitleOptions {
   keyword: string
   ignoreCase: IgnoreCase
   mode: SearMode
+  type: string
 }
 
 export function matchTitle({ title, keyword, ignoreCase = IgnoreCase.DISABLE, mode = SearMode.ALL }: MatchTitleOptions) {

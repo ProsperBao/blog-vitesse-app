@@ -21,7 +21,8 @@
   </div>
 </template>
 
-<script setup lang="ts">import { IgnoreCase, SearMode } from '~/composables'
+<script setup lang="ts">
+import { IgnoreCase, SearMode, getSearchParams } from '~/composables'
 
 const props = defineProps({
   keyword: {
@@ -36,6 +37,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  type: {
+    type: String,
+    default: 'post',
+  },
 })
 const { t } = useI18n()
 
@@ -44,12 +49,11 @@ const ic = ref<boolean>(props.ignoreCase)
 
 const toSearch = (e: Event) => {
   const keyword = (e?.target as HTMLInputElement).value
-  location.href = `/posts/${encodeURIComponent(`${
-    re.value ? SearMode.REGEXP : keyword === '' ? SearMode.ALL : SearMode.KEYWORD
-  }!${
-    ic.value ? IgnoreCase.ENABLE : keyword === '' ? IgnoreCase.DISABLE : IgnoreCase.DISABLE
-  }!${
-    keyword
-  }`)}`
+  location.href = getSearchParams({
+    keyword,
+    mode: re.value ? SearMode.REGEXP : keyword === '' ? SearMode.ALL : SearMode.KEYWORD,
+    ignoreCase: ic.value ? IgnoreCase.ENABLE : IgnoreCase.DISABLE,
+    type: props.type,
+  })
 }
 </script>

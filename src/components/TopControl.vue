@@ -1,11 +1,22 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '~/composables'
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
+import { IgnoreCase, PostType, SearMode, getSearchParams, isDark, toggleDark } from '~/composables'
+
 const { t, availableLocales, locale } = useI18n()
 
 const toggleLocales = () => {
   // change to some real logic
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+}
+
+const toPosts = (type: PostType) => {
+  return getSearchParams({
+    keyword: '',
+    mode: SearMode.ALL,
+    ignoreCase: IgnoreCase.DISABLE,
+    type,
+  })
 }
 </script>
 
@@ -15,11 +26,11 @@ const toggleLocales = () => {
       <span class="text-base align-top <md:hidden">{{ t('button.home') }}</span>
       <carbon:home class="md:hidden icon-btn" />
     </router-link>
-    <router-link to="/posts" :title="t('button.posts')">
+    <router-link :title="t('button.posts')" :to="toPosts(PostType.POST)">
       <span class="text-base align-top <md:hidden">{{ t('button.posts') }}</span>
       <carbon:notebook class="md:hidden icon-btn" />
     </router-link>
-    <router-link to="/posts" :title="t('button.learn')">
+    <router-link :title="t('button.learn')" :to="toPosts(PostType.LEARN)">
       <span class="text-base align-top <md:hidden">{{ t('button.learn') }}</span>
       <carbon:microscope class="md:hidden icon-btn" />
     </router-link>

@@ -1,6 +1,12 @@
 <script setup lang="ts">
-import { IgnoreCase, SearMode } from '~/composables'
-
+import { IgnoreCase, PostType, SearMode, getSearchParams } from '~/composables'
 const router = useRouter()
-router.push({ path: `/posts/${encodeURIComponent(`${SearMode.ALL}!${IgnoreCase.DISABLE}!`)}` })
+router.push({
+  path: getSearchParams({
+    keyword: '',
+    mode: SearMode.ALL,
+    ignoreCase: IgnoreCase.DISABLE,
+    type: PostType.POST,
+  }),
+})
 </script>

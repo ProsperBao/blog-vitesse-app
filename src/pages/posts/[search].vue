@@ -4,6 +4,7 @@
       :keyword="filter.keyword"
       :reg="filter.mode === SearMode.REGEXP"
       :ignore-case="filter.ignoreCase === IgnoreCase.ENABLE"
+      :type="filter.type"
     />
     <!-- <SearchFilter /> -->
     <ul>
@@ -39,10 +40,13 @@ import type { MatchTitleOptions } from '~/composables'
 const props = defineProps<{ search: string }>()
 
 const filter = reactive<Omit<MatchTitleOptions, 'title'>>(useSearchParams(props.search))
+watch(() => props.search, () => {
+  Object.assign(filter, useSearchParams(props.search))
+})
 
 const router = useRouter()
-const routes = router.getRoutes()
-  .filter(i => i.path.startsWith('/posts/content') && i.meta.frontmatter?.date)
+const routes = computed(() => router.getRoutes()
+  .filter(i => i.path.startsWith('/posts/content') && i.meta.frontmatter?.date && i.meta.frontmatter?.type === filter.type)
   .sort((a, b) => +new Date(b.meta.frontmatter.date) - +new Date(a.meta.frontmatter.date))
-  .filter(i => matchTitle({ ...filter, title: i.meta.frontmatter.title }))
+  .filter(i => matchTitle({ ...filter, title: i.meta.frontmatter.title })))
 </script>
