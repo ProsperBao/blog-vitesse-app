@@ -135,13 +135,18 @@
   color: var(--fg-deep);
   font-weight: 600;
   font-size: 0.875em;
+  line-height: 0.875em;
+  background: var(--prism-background);
+  padding: 0.1em 0.5em;
+  border-radius: var(--prism-block-radius);
+  white-space: nowrap;
 }
-.prose code::before {
+/* .prose code::before {
   content: "`";
 }
 .prose code::after {
   content: "`";
-}
+} */
 .prose a code {
   color: #111827;
 }
