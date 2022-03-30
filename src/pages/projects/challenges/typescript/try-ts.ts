@@ -1,7 +1,6 @@
 // Simple 1 ------------------------------------
 // type HelloWorld = string
 // type test = Expect<Equal<HelloWorld, string>>
-
 // Easy 1 ------------------------------------
 // interface Todo {
 //   title: string
@@ -217,3 +216,17 @@
 //   : S extends `${infer T}${FROM}${infer U}`
 //     ? ReplaceAll<`${T}${TO}${U}`, FROM, TO>
 //     : S
+// Middle 16 ------------------------------------
+// type Fn = (a: number, b: string) => number
+// type Result = AppendArgument<Fn, boolean>
+// // 期望是 (a: number, b: string, x: boolean) => number
+// type AppendArgument<Fn, A> = Fn extends (...args: infer R) => infer T ? (...args: [...R, A]) => T : never
+// Middle 17 ------------------------------------
+type perm = Permutation<'A' | 'B' | 'C'>
+// ['A', 'B', 'C'] | ['A', 'C', 'B'] | ['B', 'A', 'C'] | ['B', 'C', 'A'] | ['C', 'A', 'B'] | ['C', 'B', 'A']
+type Permutation<T, K = T> =
+  [T] extends [never]
+    ? []
+    : K extends K
+      ? [K, ...Permutation<Exclude<T, K>>]
+      : never
