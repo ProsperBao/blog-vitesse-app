@@ -1,12 +1,15 @@
+import { IgnoreCase, SearMode } from './search-params'
+
 export interface MatchTitleOptions {
   title: string
   keyword: string
-  isRegExp?: boolean
-  ignoreCase?: boolean
+  ignoreCase: IgnoreCase
+  mode: SearMode
 }
 
-export function matchTitle({ title, keyword, ignoreCase, isRegExp = false }: MatchTitleOptions) {
-  if (isRegExp) {
+export function matchTitle({ title, keyword, ignoreCase = IgnoreCase.DISABLE, mode = SearMode.ALL }: MatchTitleOptions) {
+  if (mode === SearMode.ALL) return true
+  if (mode === SearMode.REGEXP) {
     const reg = /^\/(.+?)\/([gimuy]*)$/.exec(keyword)
     if (reg) {
       const [, body, mods] = reg
@@ -15,8 +18,8 @@ export function matchTitle({ title, keyword, ignoreCase, isRegExp = false }: Mat
     }
   }
   else {
-    const t = ignoreCase ? title.toLowerCase() : title
-    const k = ignoreCase ? keyword.toLowerCase() : keyword
+    const t = ignoreCase === IgnoreCase.ENABLE ? title.toLowerCase() : title
+    const k = ignoreCase === IgnoreCase.ENABLE ? keyword.toLowerCase() : keyword
     if (t.includes(k)) return true
   }
 }

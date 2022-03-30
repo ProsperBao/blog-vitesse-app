@@ -79,7 +79,7 @@ class Lua2json {
 
 ### 处理 `LogicalExpression` 节点
 
-`LogicalExpression` 的操作符可以通过定义文件判断出只会存在两个 `or ` `and ` 。
+`LogicalExpression` 的操作符可以通过定义文件判断出只会存在两个 `or ` `and ` 
 
 `LogicalExpression` 类似 `||` `&&`，所以以相同的逻辑判断操作符，解析好左右各执行相应的操作即可。
 

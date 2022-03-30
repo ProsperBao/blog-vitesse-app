@@ -189,18 +189,30 @@
   margin-bottom: 2em;
   font-size: 0.875em;
   line-height: 1.7142857;
+  border-collapse: collapse;
+  border-top: 1px solid var(--prism-comment) !important;
+  border-left: 1px solid var(--prism-comment) !important;
+  border-radius: var(--prism-block-radius);
 }
 .prose thead {
   color: #111827;
   font-weight: 600;
   border-bottom-width: 1px;
   border-bottom-color: #d1d5db;
+  border-bottom: 1px solid var(--prism-comment);
 }
+
 .prose thead th {
   vertical-align: bottom;
   padding-right: 0.5714286em;
   padding-bottom: 0.5714286em;
   padding-left: 0.5714286em;
+  border-right: 1px solid var(--prism-comment) !important;
+  border-bottom: 1px solid var(--prism-comment) !important;
+}
+.prose tbody td{
+  border-right: 1px solid var(--prism-comment) !important;
+  border-bottom: 1px solid var(--prism-comment) !important;
 }
 .prose tbody tr {
   border-bottom-width: 1px;
@@ -291,7 +303,7 @@
   font-weight: 500;
   letter-spacing: 2px;
 }
-.prose thead th:first-child {
+/* .prose thead th:first-child {
   padding-left: 0;
 }
 .prose thead th:last-child {
@@ -302,7 +314,7 @@
 }
 .prose tbody td:last-child {
   padding-right: 0;
-}
+} */
 .prose > :first-child {
   margin-top: 0;
 }

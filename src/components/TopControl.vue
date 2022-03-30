@@ -15,11 +15,11 @@ const toggleLocales = () => {
       <span class="text-base align-top <md:hidden">{{ t('button.home') }}</span>
       <carbon:home class="md:hidden icon-btn" />
     </router-link>
-    <router-link to="/posts?type=post" :title="t('button.posts')">
+    <router-link to="/posts" :title="t('button.posts')">
       <span class="text-base align-top <md:hidden">{{ t('button.posts') }}</span>
       <carbon:notebook class="md:hidden icon-btn" />
     </router-link>
-    <router-link to="/posts?type=learn" :title="t('button.learn')">
+    <router-link to="/posts" :title="t('button.learn')">
       <span class="text-base align-top <md:hidden">{{ t('button.learn') }}</span>
       <carbon:microscope class="md:hidden icon-btn" />
     </router-link>

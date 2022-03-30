@@ -13,7 +13,10 @@ levelTitle: Middle
 实现置换类型，将联合类型转换为包含联合置换的数组。
 
 ```typescript
-type perm = Permutation<'A' | 'B' | 'C'>; // ['A', 'B', 'C'] | ['A', 'C', 'B'] | ['B', 'A', 'C'] | ['B', 'C', 'A'] | ['C', 'A', 'B'] | ['C', 'B', 'A']
+type perm = Permutation<'A' | 'B' | 'C'>; 
+// ['A', 'B', 'C'] | ['A', 'C', 'B'] |
+// ['B', 'A', 'C'] | ['B', 'C', 'A'] |
+// ['C', 'A', 'B'] | ['C', 'B', 'A']
 ```
 
 ### 解答

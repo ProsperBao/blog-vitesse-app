@@ -76,11 +76,11 @@ onMounted(() => {
     <slot />
   </article>
   <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8">
-    <a
+    <router-link
       class="font-mono no-underline opacity-50 hover:opacity-75"
-      @click="$router.go(-1)"
+      :to="route.path.split('/').slice(0, -1).join('/') || '/'"
     >
       cd ..
-    </a>
+    </router-link>
   </div>
 </template>
