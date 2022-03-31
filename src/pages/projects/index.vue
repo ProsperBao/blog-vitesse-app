@@ -11,10 +11,10 @@
           {{ item.title() }}
         </h4>
         <div class="project-grid py-2 -mx-3 gap-2">
-          <a
+          <router-link
             v-for="child in item.children"
             :key="child.desc"
-            :href="child.link"
+            :to="child.link"
             class="item relative flex items-top"
           >
             <div class="pt-2 pr-5">
@@ -30,16 +30,20 @@
             </div>
             <div class="flex-auto">
               <div v-if="child.link">
-                <router-link class="text-normal !inline-block" :to="child.link">{{ child.name }}</router-link>
+                <router-link class="text-normal !inline-block" :to="child.link">
+                  {{ child.name }}
+                </router-link>
               </div>
-              <div v-else class="text-normal">{{ child.name }}</div>
+              <div v-else class="text-normal">
+                {{ child.name }}
+              </div>
               <a class="flex items-center !inline-block mb-3" :href="child.github" target="_blank">
                 <carbon:logo-github class="inline-block mr-2" />
                 {{ child.github }}
               </a>
               <div class="desc text-sm opacity-50 font-normal" v-html="child.desc()" />
             </div>
-          </a>
+          </router-link>
         </div>
       </template>
     </div>
@@ -69,7 +73,7 @@ const project = reactive([
         icon: 'dst',
         desc: () => t('desc.dst-cloud-manage'),
         github: 'https://github.com/FuBaooo/dst-cloud-manage',
-        link: '',
+        link: 'https://github.com/FuBaooo/dst-cloud-manage',
       },
     ],
   },
