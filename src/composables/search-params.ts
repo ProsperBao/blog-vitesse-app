@@ -17,9 +17,9 @@ export enum PostType {
 export function useSearchParams(searchString: string): Omit<MatchTitleOptions, 'title'> {
   const split = decodeURIComponent(searchString).split('!')
   const mode = split.length < 4 ? SearMode.ALL : split[0] as unknown as SearMode
-  const ignoreCase = split[1] as unknown as IgnoreCase
+  const ignoreCase = split[1] as unknown as IgnoreCase || IgnoreCase.DISABLE
   const type = split[2] as unknown as PostType || PostType.POST
-  const express = split.length > 4 ? split.slice(3).join('!') : split[3]
+  const express = split.length > 4 ? split.slice(3).join('!') : split[3] || ''
   return {
     keyword: express,
     ignoreCase,
