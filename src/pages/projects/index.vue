@@ -39,7 +39,7 @@
               </div>
               <a class="flex items-center !inline-block mb-3" :href="child.github" target="_blank">
                 <carbon:logo-github class="inline-block mr-2" />
-                {{ child.github }}
+                {{ child.githubTitle }}
               </a>
               <div class="desc text-sm opacity-50 font-normal" v-html="child.desc()" />
             </div>
@@ -61,6 +61,7 @@ const project = reactive([
         icon: 'ts',
         desc: () => t('desc.typescript-challenges'),
         github: 'https://github.com/type-challenges/type-challenges',
+        githubTitle: 'type-challenges',
         link: '/projects/challenges/typescript',
       },
     ],
@@ -73,6 +74,7 @@ const project = reactive([
         icon: 'dst',
         desc: () => t('desc.dst-cloud-manage'),
         github: 'https://github.com/FuBaooo/dst-cloud-manage',
+        githubTitle: 'Dst-cloud-manage',
         link: 'https://github.com/FuBaooo/dst-cloud-manage',
       },
     ],

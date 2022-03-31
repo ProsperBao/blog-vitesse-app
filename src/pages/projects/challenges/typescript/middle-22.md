@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/531-medium-string-to-union/README.md)
+[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/531-medium-string-to-union/README.md)
 
 ### 问题
 实现字符串到联合类型。输入字符串参数。输出应该是输入字母的并集

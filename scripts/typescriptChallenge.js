@@ -18,7 +18,7 @@ levelTitle: ${current[0].toLocaleUpperCase()}${current.slice(1)}
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)]()
+[题目来源(type-challenges)]()
 
 ### 问题
 

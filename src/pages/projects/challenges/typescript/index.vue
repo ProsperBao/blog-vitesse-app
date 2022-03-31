@@ -22,12 +22,15 @@
         </router-link>
       </ul>
     </template>
+    <h3>{{ t('title.count') }}: {{ count }}</h3>
   </nav>
 </template>
 
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
 import { formatDate } from '~/composables'
+
+const { t } = useI18n()
 
 interface LevelListItem {
   title: string
@@ -40,10 +43,12 @@ interface LevelListItem {
 }
 
 const router = useRouter()
-const routes = router.getRoutes()
+const list = router.getRoutes()
   .filter((i) => {
     return i.path.startsWith('/projects/challenges/typescript') && i.meta.frontmatter?.date
   })
+const count = list.length
+const routes = list
   .sort((a, b) => +new Date(b.meta.frontmatter.date) - +new Date(a.meta.frontmatter.date))
   .reduce((acc, cur) => {
     const { level, levelTitle, title, date } = cur.meta.frontmatter

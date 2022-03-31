@@ -7,7 +7,7 @@ levelTitle: Easy
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/18-easy-tuple-length/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/18-easy-tuple-length/README.zh-CN.md)
 ### 问题
 实现内置的Exclude <T，U>类型，但不能直接使用它本身。
 >从联合类型T中排除U的类型成员，来构造一个新的类型。

@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/110-medium-capitalize/README.md)
+[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/110-medium-capitalize/README.md)
 
 ### 问题
 Implement `Capitalize<T>` which converts the first letter of a string to uppercase and leave the rest as-is.

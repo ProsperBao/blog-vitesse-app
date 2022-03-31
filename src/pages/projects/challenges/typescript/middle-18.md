@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/298-medium-length-of-string/README.md)
+[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/298-medium-length-of-string/README.md)
 
 ### 问题
 计算字符串类型的长度, 结果就像 `String#length`

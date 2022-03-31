@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/16-medium-pop/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/16-medium-pop/README.zh-CN.md)
 ### 问题
 实现一个通用`Last<T>`，它接受一个数组`T`并返回其最后一个元素的类型。
 

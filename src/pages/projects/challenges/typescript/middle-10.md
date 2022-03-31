@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)]()
+[题目来源(type-challenges)]()
 
 ### 问题
 有时，您可能希望根据其属性在并集中查找类型。

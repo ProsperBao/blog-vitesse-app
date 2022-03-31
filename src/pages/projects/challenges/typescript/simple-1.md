@@ -8,7 +8,7 @@ levelTitle: Simple
 [[toc]]
 
 ## Hello World
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/13-warm-hello-world/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/13-warm-hello-world/README.zh-CN.md)
 ### 问题
 
 在这个挑战中，你需要修改下方的代码使得测试通过（使其没有类型错误）。

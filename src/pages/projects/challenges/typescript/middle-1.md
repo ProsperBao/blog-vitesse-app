@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/2-medium-return-type/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/2-medium-return-type/README.zh-CN.md)
 ### 问题
 
 不使用 `ReturnType` 实现 TypeScript 的 `ReturnType<T>` 泛型。

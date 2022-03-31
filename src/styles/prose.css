@@ -190,9 +190,8 @@
   font-size: 0.875em;
   line-height: 1.7142857;
   border-collapse: collapse;
-  border-top: 1px solid var(--prism-comment) !important;
-  border-left: 1px solid var(--prism-comment) !important;
-  border-radius: var(--prism-block-radius);
+  overflow: auto;
+  display: inline-block;
 }
 .prose thead {
   color: #111827;
@@ -200,6 +199,8 @@
   border-bottom-width: 1px;
   border-bottom-color: #d1d5db;
   border-bottom: 1px solid var(--prism-comment);
+  border-top: 1px solid var(--prism-comment) !important;
+  border-left: 1px solid var(--prism-comment) !important;
 }
 
 .prose thead th {
@@ -209,6 +210,9 @@
   padding-left: 0.5714286em;
   border-right: 1px solid var(--prism-comment) !important;
   border-bottom: 1px solid var(--prism-comment) !important;
+}
+.prose tbody {
+  border-left: 1px solid var(--prism-comment) !important;
 }
 .prose tbody td{
   border-right: 1px solid var(--prism-comment) !important;

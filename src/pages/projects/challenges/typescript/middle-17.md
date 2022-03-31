@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/296-medium-permutation/README.md)
+[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/296-medium-permutation/README.md)
 
 ### 问题
 实现置换类型，将联合类型转换为包含联合置换的数组。

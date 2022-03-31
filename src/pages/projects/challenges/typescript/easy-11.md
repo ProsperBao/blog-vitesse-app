@@ -7,7 +7,7 @@ levelTitle: Easy
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/898-easy-includes/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/898-easy-includes/README.zh-CN.md)
 ### 问题
 在类型系统里实现通用的 `Array.push` 。
 

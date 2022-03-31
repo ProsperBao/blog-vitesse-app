@@ -7,7 +7,7 @@ levelTitle: Easy
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/3060-easy-unshift/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/3060-easy-unshift/README.zh-CN.md)
 ### 问题
 实现类型版本的 ```Array.unshift```。
 

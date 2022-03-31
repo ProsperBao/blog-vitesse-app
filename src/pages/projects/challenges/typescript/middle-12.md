@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[问题来源(https://github.com/type-challenges/type-challenges)]()
+[题目来源(type-challenges)]()
 
 ### 问题
 实现一个 `Trim<T>` 接收一个字符串，并去除两端空格，返回一个新的字符串。

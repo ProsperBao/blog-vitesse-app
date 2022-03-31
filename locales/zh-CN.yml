@@ -32,3 +32,5 @@ me:
 nav: {}
 not-found: 未找到页面
 status: {}
+title:
+  count: 累计
