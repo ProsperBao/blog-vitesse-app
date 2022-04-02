@@ -33,23 +33,23 @@ S extends `${infer First}${infer Rest}`
 
 ### 执行步骤
 foo-bar
-|S      |T     |First|Rest  |First=U<First>|T="" |result|
+|S      |T     |First|Rest  |`First=U<First>`|T="" |result|
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|foo-bar|      |f    |oo-bar|true          |never|KebabCase<oo-bar, f>|
-|oo-bar |f     |o    |o-bar |true          |never|KebabCase<o-bar, fo>|
-|o-bar  |fo    |o    |-bar  |true          |never|KebabCase<-bar, foo>|
-|-bar   |foo   |-    |bar   |true          |never|KebabCase<bar, foo->|
-|bar    |foo-  |b    |ar    |true          |never|KebabCase<ar, foo-b>|
-|ar     |foo-b |a    |r     |true          |never|KebabCase<r, foo-ba>|
+|foo-bar|      |f    |oo-bar|true          |never|`KebabCase<oo-bar, f>`|
+|oo-bar |f     |o    |o-bar |true          |never|`KebabCase<o-bar, fo>`|
+|o-bar  |fo    |o    |-bar  |true          |never|`KebabCase<-bar, foo>`|
+|-bar   |foo   |-    |bar   |true          |never|`KebabCase<bar, foo->`|
+|bar    |foo-  |b    |ar    |true          |never|`KebabCase<ar, foo-b>`|
+|ar     |foo-b |a    |r     |true          |never|`KebabCase<r, foo-ba>`|
 |r      |foo-ba|never|never |never         |never|r|
 
 FooBarBaz
-|S     |T      |First|Rest |First=U<First>|T="" |result|
+|S     |T      |First|Rest |`First=U<First>`|T="" |result|
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|FooBar|       |F    |ooBar|false         |true |KebabCase<ooBar, f>|
-|ooBar |f      |o    |oBar |true          |never|KebabCase<oBar, fo>|
-|oBar  |fo     |o    |Bar  |true          |never|KebabCase<Bar, foo>|
-|Bar   |foo    |B    |ar   |false         |never|KebabCase<ar, foo-b>|
-|ar    |foo-b  |a    |r    |true          |never|KebabCase<r, foo-ba>|
-|r     |foo-ba |r    |     |true          |never|KebabCase<never, foo-bar>|
+|FooBar|       |F    |ooBar|false         |true |`KebabCase<ooBar, f>`|
+|ooBar |f      |o    |oBar |true          |never|`KebabCase<oBar, fo>`|
+|oBar  |fo     |o    |Bar  |true          |never|`KebabCase<Bar, foo>`|
+|Bar   |foo    |B    |ar   |false         |never|`KebabCase<ar, foo-b>`|
+|ar    |foo-b  |a    |r    |true          |never|`KebabCase<r, foo-ba>`|
+|r     |foo-ba |r    |     |true          |never|`KebabCase<never, foo-bar>`|
 |never |foo-bar|never|never|never         |never|foo-bar|
