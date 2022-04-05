@@ -47,5 +47,5 @@ type test10 = AnyOf<[]> // false
 ### 拆分
 1. 首先拆分数组逐个判断是不是为是不是为 `false` 值
 2. `IsEmpty` 为 `true` 表示是空值为 `false` 则不是
-3. 如果当前值的 `IsEmpty<First>` 为 `false` 表示不是空值，直接返回 `true` 即可
+3. 如果当前值的 `IsEmpty<First>` 为 `false` 表示不是空值，直接返回 `true` 即可 
 4. 如果当前值为 `false` 则递归判断下一个，直到全部完成返回 `false`
