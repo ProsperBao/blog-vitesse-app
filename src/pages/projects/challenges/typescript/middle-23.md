@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/599-medium-merge/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/599-medium-merge/README.md)
 
 ### 问题
 将两种类型合并为一种新类型。第二种类型的键将覆盖第一种类型的键。

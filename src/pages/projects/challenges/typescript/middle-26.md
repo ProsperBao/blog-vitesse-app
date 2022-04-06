@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/645-medium-diff/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/645-medium-diff/README.md)
 
 ### 问题
 获取一个 `Object`，该对象是 `0` 和 `01` 之间的差异

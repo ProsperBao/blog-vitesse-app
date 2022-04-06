@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/612-medium-kebabcase/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/612-medium-kebabcase/README.md)
 
 ### 问题
 FooBarBaz -> foo-bar-baz

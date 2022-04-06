@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/610-medium-camelcase/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/610-medium-camelcase/README.md)
 
 ### 问题
 `for-bar-baz` -> `forBarBaz`

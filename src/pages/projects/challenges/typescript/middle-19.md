@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/459-medium-flatten/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/459-medium-flatten/README.zh-CN.md)
 
 ### 问题
 在这个挑战中，您需要编写一个类型，该类型接受一个数组并发出扁平数组类型。

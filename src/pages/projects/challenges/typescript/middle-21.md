@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/529-medium-absolute/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/529-medium-absolute/README.md)
 
 ### 问题
 实现一个绝对值类型，接收一个字符串, `number` or `bigint` , 输出应该是正数字符串

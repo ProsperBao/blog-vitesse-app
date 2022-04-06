@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/949-medium-anyof/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/949-medium-anyof/README.md)
 
 ### 问题
 实现类型系统中的 `any` 函数。类型接受数组，如果数组中的任何元素为 `true`，则返回 `true`。如果数组为空，则返回 false。

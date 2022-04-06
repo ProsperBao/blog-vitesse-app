@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/527-medium-append-to-object/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/527-medium-append-to-object/README.md)
 
 ### 问题
 实现向接口添加新字段的类型。类型接受三个参数。输出应该是具有新字段的对象。
