@@ -43,10 +43,10 @@ type PercentageParser<A extends string> = A extends `${CheckPrefix<infer P>}${in
 1. 需要拆分成两种情况看待
   1. 第一个字符是 `+/-` 两个其中一个
   2. 第一个字符不是 `+/-` 两个其中一个
-2. `A extends `${CheckPrefix<infer P>}${infer Rest}` 使表达式成立的条件
+2. ```A extends '${CheckPrefix<infer P>}${infer Rest}' ``` 使表达式成立的条件
   1. 字符串满足包括子表达式中的条件也成立
   2. `CheckPrefix<infer P>` 内部的 `T extends '+' | '-'` 为 `true`
-  3. `A extends `${CheckPrefix<infer P>}${infer Rest}` 成立就相当于 `CheckPrefix<infer P>` 成立
+  3. ```A extends '${CheckPrefix<infer P>}${infer Rest}' ``` 成立就相当于 `CheckPrefix<infer P>` 成立
   4. 也就是说 `infer P` 要在 `+/-` 两个其中一个
 3. 如果 `2.` 中不满足就相当于符号位为 `""`
 4. 接下来就是检查字符串是否以 `%` 结尾
