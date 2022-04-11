@@ -23,19 +23,8 @@ type case6 = StartsWith<'abc', ''> // true
 
 ### 解答
 ```typescript
-type StartsWith<T extends string, U extends string> = 
-  T extends `${infer TS}${infer TRest}`
-  ? U extends `${infer US}${infer URest}`
-    ? TS extends US
-      ? StartsWith<TRest, URest>
-      : false
-    : true
-  : false
+type StartsWith<T extends string, U extends string> = T extends `${U}${infer _R}` ? true : false
 ```
 
 ### 拆分
-1. 用 `infer` 拆分两个字符串的首字符判断是否相等
-2. 如果 `U` 为 `''` 则直接返回 `true`
-3. 如果 `U` 不为 `''` 则继续判断 `TS` 是否为 `US`
-4. 如果 `TS` 为 `US` 则继续判断下一个字符
-5. 如果 `TS` 不为 `US` 则返回 `false`
+1. 直接用 `ts` 字符串分配特性解决
