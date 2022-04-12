@@ -263,11 +263,13 @@
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   list-style-type: none;
+  padding-left: 0;
 }
 .prose ul {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   list-style-type: none;
+  padding-left: 0;
 }
 .prose li {
   margin-top: 0.5em;
