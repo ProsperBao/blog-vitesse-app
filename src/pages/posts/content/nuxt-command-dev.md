@@ -28,12 +28,6 @@ type: post
     }
    ```
 
-   ```typescript
-    const serverHandler = (req, res) => {
-      return currentHandler ? currentHandler(req, res) : loadingHandler(req, res)
-    }
-   ```
-
 - 用 `loadKit` 从 `packages/kit` 中加载需要用到的套件 
   
 - `loadNuxt` 加载 Nuxt  `buildNuxt` 构建 Nuxt
