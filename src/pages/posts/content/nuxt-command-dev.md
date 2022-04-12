@@ -46,7 +46,7 @@ type: post
    -  利用 `currentHandler` 设置为 `null` 来实现 `HTTP` 服务未加载完成的 Loading
    -  如果当前 `currentNuxt` 实例存在，则关闭当前实例
    -  利用 `loadNuxt` 重启 Nuxt 服务
-   -  确保 Nuxt 生成配置文件成功之后，用 `buildNuxt` 构建 Nuxt 代码
+   -  确保 Nuxt 生成文件成功之后，用 `buildNuxt` 构建 Nuxt 代码
    -  重新设置 `currentHandler` 来重启服务
    -  输出修改页面的 URL
    -  **错误处理：**如果有错误则执行以下逻辑
