@@ -2,7 +2,7 @@
 title: Nuxt3 dev 命令解析
 date: 2022-04-12 14:00:00
 lang: zh-CN
-duration: 10min
+duration: 5min
 description: Nuxt3 dev 命令解析。解析 Nuxt3 如何启动一个开发项目。
 tags: typescript, vue, nuxt3
 type: post
