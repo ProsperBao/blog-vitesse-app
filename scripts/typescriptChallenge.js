@@ -22,11 +22,15 @@ levelTitle: ${current[0].toLocaleUpperCase()}${current.slice(1)}
 
 ### 问题
 
+${'`' + '`' + '`'}typescript
+${'`' + '`' + '`'}
 
 ### 解答
+
 ${'`' + '`' + '`'}typescript
 ${'`' + '`' + '`'}
 
 ### 拆分
+
 `
 fs.writeFileSync(path.resolve(targetPath, newFileName), contentTemplate)

@@ -1,5 +1,5 @@
 ---
-title: 
+title: PartialByKeys
 date: 2022-4-13 11:24:39
 level: 2
 levelTitle: Middle
@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)]()
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/2757-medium-partialbykeys/README.md)
 
 ### 问题
 实现一个通用的 `PartialByKeys<T，K>` 它接受两种类型的参数 `T` 和 `K`。
