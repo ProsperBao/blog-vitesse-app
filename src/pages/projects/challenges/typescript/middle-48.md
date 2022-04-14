@@ -1,5 +1,5 @@
 ---
-title: 
+title: BEM style string 
 date: 2022-4-14 12:15:04
 level: 2
 levelTitle: Middle
@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)]()
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/3326-medium-bem-style-string/README.md)
 
 ### 问题
 
