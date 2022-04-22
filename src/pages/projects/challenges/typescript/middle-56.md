@@ -1,5 +1,5 @@
 ---
-title: 
+title: Chunk 
 date: 2022-4-22 16:29:22
 level: 2
 levelTitle: Middle
@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)]()
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/main/questions/04499-medium-chunk/README.md)
 
 ### 问题
 
