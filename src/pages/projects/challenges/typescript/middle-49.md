@@ -7,7 +7,7 @@ levelTitle: Middle
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/master/questions/3376-medium-inordertraversal/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/main/questions/03376-medium-inordertraversal/README.md)
 
 ### 问题
 
