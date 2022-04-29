@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const current = 'middle'
+const current = 'hard'
 const targetPath = path.resolve(__dirname, '../src/pages/projects/challenges/typescript')
 // 获取目录下所有包含current的文件
 const files = fs.readdirSync(targetPath)
@@ -12,7 +12,7 @@ const newFileName = `${current}-${+result[0] + 1}.md`
 const contentTemplate = `---
 title: 
 date: ${new Date().toLocaleString().replace(/\//g, '-')}
-level: 2
+level: 3
 levelTitle: ${current[0].toLocaleUpperCase()}${current.slice(1)}
 ---
 
