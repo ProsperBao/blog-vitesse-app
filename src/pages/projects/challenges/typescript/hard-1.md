@@ -7,7 +7,7 @@ levelTitle: Hard
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/edit/main/questions/00006-hard-simple-vue/README.zh-CN.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/main/questions/00006-hard-simple-vue/README.zh-CN.md)
 
 ### 问题
 
