@@ -7,7 +7,7 @@ levelTitle: Extreme
 
 [[toc]]
 
-[题目来源(type-challenges)](https://github.com/FuBaooo/type-challenges/blob/master/questions/476-extreme-sum/README.md)
+[题目来源(type-challenges)](https://github.com/type-challenges/type-challenges/blob/main/questions/00476-extreme-sum/README.md)
 
 ### 问题
 
