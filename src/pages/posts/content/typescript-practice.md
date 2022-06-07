@@ -1,8 +1,8 @@
 ---
 title: Typescript 综合
-date: 2022-5-31 18:30:01
+date: 2022-6-06 14:25:08
 lang: zh-CN
-duration: 12min
+duration: 10min
 description: Typescript 综合
 tags: other
 type: learn
