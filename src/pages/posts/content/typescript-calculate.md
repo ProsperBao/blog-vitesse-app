@@ -15,12 +15,12 @@ TypeScript 虽然图灵完备，但没有加减乘除运算符，但可以通过
 ## 构造数组
 
 ```ts
-type ConstructTuple<
+type Tuple<
   T extends number,
-  Res extends unknown[] = [],
-> = Res["length"] extends T ? Res : ConstructTuple<T, [...Res, unknown]>
+  Res extends 1[] = [],
+> = Res["length"] extends T ? Res : Tuple<T, [...Res, 1]>
 
-type Res = ConstructTuple<3> // [unknown, unknown, unknown]
+type Res = Tuple<3> // [1, 1, 1]
 ```
 
 ## 加减乘除
@@ -31,8 +31,8 @@ type Res = ConstructTuple<3> // [unknown, unknown, unknown]
 
 ```ts
 type Sum<A extends number, B extends number> = [
-  ...ConstructTuple<A>,
-  ...ConstructTuple<B>,
+  ...Tuple<A>,
+  ...Tuple<B>,
 ]["length"]
 
 type Res = Sum<1, 1> // 2
@@ -54,8 +54,8 @@ type Res3 = Sum<-1, 0> // 报错：类型实例化过深，且可能无限。ts(
 
 ```ts
 // M => minuend 被减数, S => subtrahend 减数
-type Subtract<M extends number, S extends number> = ConstructTuple<M> extends [
-  ...ConstructTuple<S>,
+type Subtract<M extends number, S extends number> = Tuple<M> extends [
+  ...Tuple<S>,
   ...infer Res,
 ]
   ? Res["length"]
@@ -84,7 +84,7 @@ type Multiply<
   Res extends unknown[] = [],
 > = A extends 0
   ? Res["length"]
-  : Multiply<Subtract<A, 1>, B, [...Res, ...ConstructTuple<B>]>
+  : Multiply<Subtract<A, 1>, B, [...Res, ...Tuple<B>]>
 
 type Res = Multiply<2, 5> // 10
 ```
